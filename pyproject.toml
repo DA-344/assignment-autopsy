@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assignment-autopsy"
+version = "0.0.1"
+requires-python = ">=3.12"
+authors = [
+    { name = "DA-344 (aka Developer Anonymous)", email = "contact@dev-anony.dev" },
+]
+maintainers = [
+    { name = "DA-344 (aka Developer Anonymous)", email = "contact@dev-anony.dev" },
+]
+description = "A website for schools where managing, reviewing, and giving feedback on assignments is easier than ever!"
+dependencies = [
+    "asyncpg>=0.31.0,<1",
+    "alembic>=1.14,<2",
+    "argon2-cffi>=23.1,<24",
+    "fastapi>=0.141.1,<1",
+    "httpx>=0.28,<1",
+    "cryptography>=44,<46",
+    "jinja2>=3.1,<4",
+    "msgspec>=0.21.1,<1",
+    "odfpy>=1.4,<2",
+    "olefile>=0.47,<1",
+    "openpyxl>=3.1,<4",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.3,<2",
+    "python-multipart>=0.0.20,<1",
+    "pypdf>=5.0,<6",
+    "python-docx>=1.1,<2",
+    "python-pptx>=1.0,<2",
+    "pyotp>=2.9,<3",
+    "sqlalchemy[asyncio]>=2.0.54,<3",
+    "uvicorn>=0.34,<1",
+    "xlrd>=2.0,<3",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependency-groups]
+lint = ["ruff>=0.16,<0.17"]
+tc = ["basedpyright>=1.39.9,<2"]
+test = ["pytest>=8.3,<9", "pytest-asyncio>=0.25,<1"]
+
+[tool.basedpyright]
+pythonVersion = "3.13"
+typeCheckingMode = "strict"
+reportPrivateUsage = false
+reportIncompatibleMethodOverride = false
+reportUnnecessaryComparison = false
+reportUnnecessaryIsInstance = false
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "D", "RUF"]
+ignore = [
+    "E501",
+    "D100", "D101", "D102", "D103", "D104", "D105", "D107", "D200", "D203", "D205", "D212", "D400", "D404", "D415",
+    "F403", "F405",
+    "W293",
+    "RUF001", "RUF002", "RUF003", "RUF029", "RUF067",
+]
+unfixable = ["E501"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"

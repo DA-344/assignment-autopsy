@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block breadcrumb %}{% if submission %}Editar entrega{% else %}Preparar entrega{% endif %}{% endblock %}
+{% block content %}
+<h1>{% if submission %}Editar entrega{% else %}Preparar entrega{% endif %} · {{ assignment.title }}</h1>
+<p>Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo.</p>
+<section class="card">
+  <h2>Archivos</h2>
+  <div class="file-manager">
+    {% for asset in assets %}
+    <div class="file-manager-row">
+      <span class="file-icon">▤</span>
+      <span><a href="/files/{{ asset.id }}/preview" target="_blank">{{ asset.original_filename }}</a><small>{{ (asset.size / 1024)|round(1) }} KB · Vista previa</small></span>
+      <form method="post" action="/files/{{ asset.id }}/delete" onsubmit="return confirm('¿Quitar este archivo de tu entrega?');">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+        <button type="submit" class="file-trash-button" aria-label="Eliminar archivo" title="Eliminar archivo">🗑</button>
+      </form>
+    </div>
+    {% else %}<p class="muted">Todavía no has adjuntado archivos.</p>{% endfor %}
+  </div>
+  <form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+    <label class="file-add-control">＋ Añadir archivos<input type="file" name="files" multiple accept=".txt,.md,.csv,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.odt,.odp,.ods" required></label>
+    <button>Subir y analizar</button>
+  </form>
+</section>
+{% if submission %}<a class="button secondary" href="/submissions/{{ submission.id }}">Ver análisis de IA</a>{% endif %}
+{% endblock %}

@@ -1,0 +1,640 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Mis equipos"
+msgstr "My teams"
+
+msgid "Añadir equipo"
+msgstr "Add team"
+
+msgid "Preparar entrega"
+msgstr "Prepare submission"
+
+msgid "Editar entrega"
+msgstr "Edit submission"
+
+msgid "Ver entrega"
+msgstr "View submission"
+
+msgid "Valoración de IA"
+msgstr "AI review"
+
+msgid "Rúbrica"
+msgstr "Rubric"
+
+msgid "Entregas para corregir"
+msgstr "Submissions to review"
+
+msgid "Guardar valoración oficial"
+msgstr "Save official review"
+
+msgid "Permitir volver a entregar"
+msgstr "Allow resubmission"
+
+msgid "AULA DIGITAL"
+msgstr "DIGITAL CLASSROOM"
+
+msgid "Equipos activos"
+msgstr "Active teams"
+
+msgid "Espacios activos"
+msgstr "Active spaces"
+
+msgid "Panel principal"
+msgstr "Dashboard"
+
+msgid "Diseño de actividad"
+msgstr "Activity design"
+
+msgid "Nueva tarea"
+msgstr "New assignment"
+
+msgid "Editar tarea"
+msgstr "Edit assignment"
+
+msgid "Eliminar tarea"
+msgstr "Delete assignment"
+
+msgid "¿Eliminar esta tarea y sus entregas?"
+msgstr "Delete this assignment and its submissions?"
+
+msgid "Editar equipo"
+msgstr "Edit team"
+
+msgid "Eliminar equipo"
+msgstr "Delete team"
+
+msgid "¿Eliminar este equipo? Se perderán sus tareas y entregas."
+msgstr "Delete this team? Its assignments and submissions will be lost."
+
+msgid "Permitir volver a entregar esta tarea"
+msgstr "Allow resubmitting this assignment"
+
+msgid "Nota (sobre 10)"
+msgstr "Grade (out of 10)"
+
+msgid "Administración"
+msgstr "Administration"
+
+msgid "Crear un equipo"
+msgstr "Create a team"
+
+msgid "Crear equipo"
+msgstr "Create team"
+
+msgid "Unirse"
+msgstr "Join"
+
+msgid "Código de invitación"
+msgstr "Invitation code"
+
+msgid "Nuevo equipo"
+msgstr "New team"
+
+msgid "Espacio de trabajo"
+msgstr "Workspace"
+
+msgid "Cuenta"
+msgstr "Account"
+
+msgid "Cerrar sesión"
+msgstr "Sign out"
+
+msgid "Perfil"
+msgstr "Profile"
+
+msgid "Guardar cambios"
+msgstr "Save changes"
+
+msgid "Guardar imagen"
+msgstr "Save picture"
+
+msgid "Imagen de perfil"
+msgstr "Profile picture"
+
+msgid "Nombre de usuario"
+msgstr "Username"
+
+msgid "Guardar nombre"
+msgstr "Save username"
+
+msgid "Contraseña"
+msgstr "Password"
+
+msgid "Correo electrónico"
+msgstr "Email address"
+
+msgid "Nombre"
+msgstr "First name"
+
+msgid "Apellidos"
+msgstr "Last name"
+
+msgid "Mis miembros"
+msgstr "Members"
+
+msgid "Tareas del equipo"
+msgstr "Team assignments"
+
+msgid "Miembros"
+msgstr "Members"
+
+msgid "Crear cuenta"
+msgstr "Create account"
+
+msgid "Iniciar sesión"
+msgstr "Sign in"
+
+msgid "Registrarme"
+msgstr "Create account"
+
+msgid "Ya tengo cuenta"
+msgstr "I already have an account"
+
+msgid "¡Bienvenido de nuevo!"
+msgstr "Welcome back!"
+
+msgid "Nos alegra verte otra vez, inicia sesión en tu cuenta."
+msgstr "We're glad to see you again, sign in to your account."
+
+msgid "¿Olvidaste tu contraseña?"
+msgstr "Forgot your password?"
+
+msgid "Próximamente"
+msgstr "Coming soon"
+
+msgid "o"
+msgstr "or"
+
+msgid "¿Necesitas una cuenta?"
+msgstr "Need an account?"
+
+msgid "Regístrate"
+msgstr "Sign up"
+
+msgid "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
+msgstr "Your role depends on each team: creator as teacher, invited as student."
+
+msgid "¿Ya tienes cuenta?"
+msgstr "Already have an account?"
+
+msgid "Inicia sesión"
+msgstr "Sign in"
+
+msgid "Elige tu GamerTag"
+msgstr "Choose your GamerTag"
+
+msgid "Enviar al profesor"
+msgstr "Send to teacher"
+
+msgid "Guardar y analizar"
+msgstr "Save and analyze"
+
+msgid "Guardar y analizar entrega"
+msgstr "Save and analyze submission"
+
+msgid "Archivos enviados"
+msgstr "Submitted files"
+
+msgid "Archivos guardados"
+msgstr "Saved files"
+
+msgid "Archivos de referencia"
+msgstr "Reference files"
+
+msgid "Requisitos"
+msgstr "Requirements"
+
+msgid "Rúbrica opcional"
+msgstr "Optional rubric"
+
+msgid "Usar rúbrica"
+msgstr "Use rubric"
+
+msgid "Añadir criterio"
+msgstr "Add criterion"
+
+msgid "Añadir nivel"
+msgstr "Add level"
+
+msgid "Revisión asistida"
+msgstr "Assisted review"
+
+msgid "Resumen"
+msgstr "Summary"
+
+msgid "Completada"
+msgstr "Complete"
+
+msgid "No disponible"
+msgstr "Unavailable"
+
+msgid "En proceso"
+msgstr "In progress"
+
+msgid "Cumplido"
+msgstr "Fulfilled"
+
+msgid "Parcial"
+msgstr "Partially fulfilled"
+
+msgid "Falta"
+msgstr "Missing"
+
+msgid "Pendiente"
+msgstr "Pending"
+
+msgid "Vista previa"
+msgstr "Preview"
+
+msgid "Vista única"
+msgstr "One-time view"
+
+msgid "Contexto IA"
+msgstr "AI context"
+
+msgid "Sin descripción."
+msgstr "No description."
+
+msgid "Sin requisitos específicos."
+msgstr "No specific requirements."
+
+msgid "Esta tarea no utiliza rúbrica."
+msgstr "This assignment has no rubric."
+
+msgid "Insertar criterio arriba"
+msgstr "Insert criterion above"
+
+msgid "Insertar criterio aquí"
+msgstr "Insert criterion here"
+
+msgid "Insertar nivel a la izquierda"
+msgstr "Insert level on the left"
+
+msgid "Insertar nivel aquí"
+msgstr "Insert level here"
+
+msgid "Eliminar nivel"
+msgstr "Remove level"
+
+msgid "Eliminar criterio"
+msgstr "Remove criterion"
+
+msgid "Nuevo criterio"
+msgstr "New criterion"
+
+msgid "Nuevo nivel"
+msgstr "New level"
+
+msgid "Describe este nivel..."
+msgstr "Describe this level..."
+
+msgid "Ordenado de mayor a menor"
+msgstr "Sorted from highest to lowest"
+
+msgid "Ordenado de menor a mayor"
+msgstr "Sorted from lowest to highest"
+
+msgid "Descargados"
+msgstr "Downloaded"
+
+msgid "Entrar"
+msgstr "Sign in"
+
+msgid "Continuar con Google"
+msgstr "Continue with Google"
+
+msgid "Crear tarea"
+msgstr "Create assignment"
+
+msgid "Título"
+msgstr "Title"
+
+msgid "Descripción"
+msgstr "Description"
+
+msgid "Fecha de entrega"
+msgstr "Due date"
+
+msgid "Descargables"
+msgstr "Downloadable"
+
+msgid "Usar para valoración de IA"
+msgstr "Use for AI review"
+
+msgid "Subir archivos"
+msgstr "Upload files"
+
+msgid "Subir y analizar"
+msgstr "Upload and analyze"
+
+msgid "Corregir"
+msgstr "Grade"
+
+msgid "Eliminar"
+msgstr "Delete"
+
+msgid "Cambiar tema"
+msgstr "Toggle theme"
+
+msgid "En línea"
+msgstr "Online"
+
+msgid "Equipos"
+msgstr "Teams"
+
+msgid "Acerca el cursor al borde de una fila o columna: aparecerá un "
+msgstr "Move the cursor to a row or column edge: a "
+
+msgid " para insertar justo ahí, como en una tabla de Word."
+msgstr " will appear to insert right there, like in a Word table."
+
+msgid "Inicio"
+msgstr "Home"
+
+msgid "Próximas entregas"
+msgstr "Upcoming deadlines"
+
+msgid "No hay entregas próximas"
+msgstr "No upcoming deadlines"
+
+msgid "Resumen del equipo"
+msgstr "Team overview"
+
+msgid "Ajustes del equipo"
+msgstr "Team settings"
+
+msgid "Invitaciones"
+msgstr "Invites"
+
+msgid "Crea un enlace de invitación que cualquiera puede usar para unirse como alumno."
+msgstr "Create an invite link that anyone can use to join as a student."
+
+msgid "Enlaces de invitación activos"
+msgstr "Active invite links"
+
+msgid "Pausar invitaciones"
+msgstr "Pause invites"
+
+msgid "Reanudar invitaciones"
+msgstr "Resume invites"
+
+msgid "Crear enlace de invitación"
+msgstr "Create invite link"
+
+msgid "Invitador"
+msgstr "Inviter"
+
+msgid "Usos"
+msgstr "Uses"
+
+msgid "Expira"
+msgstr "Expires"
+
+msgid "Roles"
+msgstr "Roles"
+
+msgid "Las invitaciones están pausadas: nadie podrá unirse con este enlace hasta que lo reactives."
+msgstr "Invites are paused: nobody will be able to join with this link until you resume them."
+
+msgid "Todavía no has creado ningún enlace de invitación."
+msgstr "You haven't created an invite link yet."
+
+msgid "Comparte este enlace para que se unan alumnos u otros profesores."
+msgstr "Share this link so students or other teachers can join."
+
+msgid "Tareas"
+msgstr "Assignments"
+
+msgid "Aún no hay tareas"
+msgstr "No assignments yet"
+
+msgid "Profesor"
+msgstr "Teacher"
+
+msgid "Alumno"
+msgstr "Student"
+
+msgid "Ajustes"
+msgstr "Settings"
+
+msgid "Menú"
+msgstr "Menu"
+
+msgid "Añade un equipo"
+msgstr "Add a team"
+
+msgid "Crea tu propio espacio o únete a uno con un código de invitación."
+msgstr "Create your own space or join one with an invitation code."
+
+msgid "Nombre del equipo"
+msgstr "Team name"
+
+msgid "Descripción (opcional)"
+msgstr "Description (optional)"
+
+msgid "Cerrar"
+msgstr "Close"
+
+msgid "Buscar"
+msgstr "Search"
+
+msgid "Información de cuenta"
+msgstr "Account information"
+
+msgid "Contraseña y seguridad"
+msgstr "Password and security"
+
+msgid "Apariencia"
+msgstr "Appearance"
+
+msgid "Ajustes de la aplicación"
+msgstr "App settings"
+
+msgid "Editar perfiles ✎"
+msgstr "Edit profile ✎"
+
+msgid "Nombre y apellidos"
+msgstr "Full name"
+
+msgid "Mostrar"
+msgstr "Show"
+
+msgid "Ocultar"
+msgstr "Hide"
+
+msgid "Editar"
+msgstr "Edit"
+
+msgid "Cancelar"
+msgstr "Cancel"
+
+msgid "Guardar"
+msgstr "Save"
+
+msgid "Disponible de nuevo cada 14 días."
+msgstr "Can be changed again every 14 days."
+
+msgid "Contraseña actual"
+msgstr "Current password"
+
+msgid "Nueva contraseña"
+msgstr "New password"
+
+msgid "Mínimo 12 caracteres."
+msgstr "At least 12 characters."
+
+msgid "Cambiar contraseña"
+msgstr "Change password"
+
+msgid "Autenticación de varios factores"
+msgstr "Multi-factor authentication"
+
+msgid "Habilitado"
+msgstr "Enabled"
+
+msgid "Deshabilitado"
+msgstr "Disabled"
+
+msgid "Activar"
+msgstr "Enable"
+
+msgid "Escanea el código QR con tu app de autenticación o introduce la clave manualmente."
+msgstr "Scan the QR code with your authenticator app or enter the key manually."
+
+msgid "Clave:"
+msgstr "Key:"
+
+msgid "Abrir en la app"
+msgstr "Open in app"
+
+msgid "Códigos de recuperación (se muestran solo una vez)"
+msgstr "Recovery codes (shown only once)"
+
+msgid "Descargar códigos .txt"
+msgstr "Download codes .txt"
+
+msgid "Cambiar imagen"
+msgstr "Change image"
+
+msgid "Quitar imagen"
+msgstr "Remove image"
+
+msgid "Elegir imagen"
+msgstr "Choose image"
+
+msgid "Elige una imagen y ajusta el recorte. Se mostrará en círculo."
+msgstr "Choose an image and adjust the crop. It will be shown as a circle."
+
+msgid "Tienes cambios sin guardar"
+msgstr "You have unsaved changes"
+
+msgid "Restablecer"
+msgstr "Reset"
+
+msgid "Tema"
+msgstr "Theme"
+
+msgid "Oscuro"
+msgstr "Dark"
+
+msgid "Claro"
+msgstr "Light"
+
+msgid "Idioma"
+msgstr "Language"
+
+msgid "Editar imagen"
+msgstr "Edit image"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Girar"
+msgstr "Rotate"
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "Arrastra para mover la imagen"
+msgstr "Drag to reposition the image"
+
+msgid "Nombre de usuario actualizado"
+msgstr "Username updated"
+
+msgid "Contraseña actualizada"
+msgstr "Password updated"
+
+msgid "Imagen de perfil actualizada"
+msgstr "Profile picture updated"
+
+msgid "Imagen eliminada"
+msgstr "Image removed"
+
+msgid "No se pudo leer la imagen"
+msgstr "The image could not be read"
+
+msgid "Algo salió mal. Inténtalo de nuevo."
+msgstr "Something went wrong. Please try again."
+
+msgid "Guarda los cambios o restablécelos antes de cerrar"
+msgstr "Save or reset your changes before closing"
+
+msgid "El nombre de usuario no es válido"
+msgstr "The username is not valid"
+
+msgid "Solo puedes cambiar tu nombre de usuario cada 14 días"
+msgstr "You can only change your username every 14 days"
+
+msgid "Ese nombre de usuario ya está ocupado"
+msgstr "That username is already taken"
+
+msgid "Selecciona una imagen"
+msgstr "Select an image"
+
+msgid "Foto no permitida"
+msgstr "Image not allowed"
+
+msgid "El archivo supera el tamaño permitido"
+msgstr "The file exceeds the allowed size"
+
+msgid "La contraseña actual no es correcta"
+msgstr "The current password is incorrect"
+
+msgid "La nueva contraseña debe tener al menos 12 caracteres"
+msgstr "The new password must be at least 12 characters"
+
+msgid "La verificación en dos pasos ya está activa"
+msgstr "Two-step verification is already enabled"
+
+msgid "Administrar equipo"
+msgstr "Manage team"
+
+msgid "Imagen del equipo"
+msgstr "Team image"
+
+msgid "Generar invitación"
+msgstr "Generate invitation"
+
+msgid "Equipo / Aula"
+msgstr "Team / Classroom"
+
+msgid "No hay tareas todavía"
+msgstr "No assignments yet"
+
+msgid "Las nuevas tareas aparecerán aquí."
+msgstr "New assignments will appear here."
+
+msgid "Aún no perteneces a ningún equipo"
+msgstr "You don't belong to any team yet"
+
+msgid "Cuando te inviten, aparecerá aquí."
+msgstr "When you are invited, it will appear here."
+
+msgid "Sin descripción todavía."
+msgstr "No description yet."
+
+msgid "Espacio de colaboración para tu clase."
+msgstr "Collaboration space for your class."

@@ -1,0 +1,640 @@
+msgid ""
+msgstr ""
+"Language: es\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Mis equipos"
+msgstr "Mis equipos"
+
+msgid "Añadir equipo"
+msgstr "Añadir equipo"
+
+msgid "Preparar entrega"
+msgstr "Preparar entrega"
+
+msgid "Editar entrega"
+msgstr "Editar entrega"
+
+msgid "Ver entrega"
+msgstr "Ver entrega"
+
+msgid "Valoración de IA"
+msgstr "Valoración de IA"
+
+msgid "Rúbrica"
+msgstr "Rúbrica"
+
+msgid "Entregas para corregir"
+msgstr "Entregas para corregir"
+
+msgid "Guardar valoración oficial"
+msgstr "Guardar valoración oficial"
+
+msgid "Permitir volver a entregar"
+msgstr "Permitir volver a entregar"
+
+msgid "AULA DIGITAL"
+msgstr "AULA DIGITAL"
+
+msgid "Equipos activos"
+msgstr "Equipos activos"
+
+msgid "Espacios activos"
+msgstr "Espacios activos"
+
+msgid "Panel principal"
+msgstr "Panel principal"
+
+msgid "Diseño de actividad"
+msgstr "Diseño de actividad"
+
+msgid "Nueva tarea"
+msgstr "Nueva tarea"
+
+msgid "Editar tarea"
+msgstr "Editar tarea"
+
+msgid "Eliminar tarea"
+msgstr "Eliminar tarea"
+
+msgid "¿Eliminar esta tarea y sus entregas?"
+msgstr "¿Eliminar esta tarea y sus entregas?"
+
+msgid "Editar equipo"
+msgstr "Editar equipo"
+
+msgid "Eliminar equipo"
+msgstr "Eliminar equipo"
+
+msgid "¿Eliminar este equipo? Se perderán sus tareas y entregas."
+msgstr "¿Eliminar este equipo? Se perderán sus tareas y entregas."
+
+msgid "Permitir volver a entregar esta tarea"
+msgstr "Permitir volver a entregar esta tarea"
+
+msgid "Nota (sobre 10)"
+msgstr "Nota (sobre 10)"
+
+msgid "Administración"
+msgstr "Administración"
+
+msgid "Crear un equipo"
+msgstr "Crear un equipo"
+
+msgid "Crear equipo"
+msgstr "Crear equipo"
+
+msgid "Unirse"
+msgstr "Unirse"
+
+msgid "Código de invitación"
+msgstr "Código de invitación"
+
+msgid "Nuevo equipo"
+msgstr "Nuevo equipo"
+
+msgid "Espacio de trabajo"
+msgstr "Espacio de trabajo"
+
+msgid "Cuenta"
+msgstr "Cuenta"
+
+msgid "Cerrar sesión"
+msgstr "Cerrar sesión"
+
+msgid "Perfil"
+msgstr "Perfil"
+
+msgid "Guardar cambios"
+msgstr "Guardar cambios"
+
+msgid "Guardar imagen"
+msgstr "Guardar imagen"
+
+msgid "Imagen de perfil"
+msgstr "Imagen de perfil"
+
+msgid "Nombre de usuario"
+msgstr "Nombre de usuario"
+
+msgid "Guardar nombre"
+msgstr "Guardar nombre"
+
+msgid "Contraseña"
+msgstr "Contraseña"
+
+msgid "Correo electrónico"
+msgstr "Correo electrónico"
+
+msgid "Nombre"
+msgstr "Nombre"
+
+msgid "Apellidos"
+msgstr "Apellidos"
+
+msgid "Mis miembros"
+msgstr "Mis miembros"
+
+msgid "Tareas del equipo"
+msgstr "Tareas del equipo"
+
+msgid "Miembros"
+msgstr "Miembros"
+
+msgid "Crear cuenta"
+msgstr "Crear cuenta"
+
+msgid "Iniciar sesión"
+msgstr "Iniciar sesión"
+
+msgid "Registrarme"
+msgstr "Registrarme"
+
+msgid "Ya tengo cuenta"
+msgstr "Ya tengo cuenta"
+
+msgid "¡Bienvenido de nuevo!"
+msgstr "¡Bienvenido de nuevo!"
+
+msgid "Nos alegra verte otra vez, inicia sesión en tu cuenta."
+msgstr "Nos alegra verte otra vez, inicia sesión en tu cuenta."
+
+msgid "¿Olvidaste tu contraseña?"
+msgstr "¿Olvidaste tu contraseña?"
+
+msgid "Próximamente"
+msgstr "Próximamente"
+
+msgid "o"
+msgstr "o"
+
+msgid "¿Necesitas una cuenta?"
+msgstr "¿Necesitas una cuenta?"
+
+msgid "Regístrate"
+msgstr "Regístrate"
+
+msgid "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
+msgstr "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
+
+msgid "¿Ya tienes cuenta?"
+msgstr "¿Ya tienes cuenta?"
+
+msgid "Inicia sesión"
+msgstr "Inicia sesión"
+
+msgid "Elige tu GamerTag"
+msgstr "Elige tu GamerTag"
+
+msgid "Enviar al profesor"
+msgstr "Enviar al profesor"
+
+msgid "Guardar y analizar"
+msgstr "Guardar y analizar"
+
+msgid "Guardar y analizar entrega"
+msgstr "Guardar y analizar entrega"
+
+msgid "Archivos enviados"
+msgstr "Archivos enviados"
+
+msgid "Archivos guardados"
+msgstr "Archivos guardados"
+
+msgid "Archivos de referencia"
+msgstr "Archivos de referencia"
+
+msgid "Requisitos"
+msgstr "Requisitos"
+
+msgid "Rúbrica opcional"
+msgstr "Rúbrica opcional"
+
+msgid "Usar rúbrica"
+msgstr "Usar rúbrica"
+
+msgid "Añadir criterio"
+msgstr "Añadir criterio"
+
+msgid "Añadir nivel"
+msgstr "Añadir nivel"
+
+msgid "Revisión asistida"
+msgstr "Revisión asistida"
+
+msgid "Resumen"
+msgstr "Resumen"
+
+msgid "Completada"
+msgstr "Completada"
+
+msgid "No disponible"
+msgstr "No disponible"
+
+msgid "En proceso"
+msgstr "En proceso"
+
+msgid "Cumplido"
+msgstr "Cumplido"
+
+msgid "Parcial"
+msgstr "Parcial"
+
+msgid "Falta"
+msgstr "Falta"
+
+msgid "Pendiente"
+msgstr "Pendiente"
+
+msgid "Vista previa"
+msgstr "Vista previa"
+
+msgid "Vista única"
+msgstr "Vista única"
+
+msgid "Contexto IA"
+msgstr "Contexto IA"
+
+msgid "Sin descripción."
+msgstr "Sin descripción."
+
+msgid "Sin requisitos específicos."
+msgstr "Sin requisitos específicos."
+
+msgid "Esta tarea no utiliza rúbrica."
+msgstr "Esta tarea no utiliza rúbrica."
+
+msgid "Insertar criterio arriba"
+msgstr "Insertar criterio arriba"
+
+msgid "Insertar criterio aquí"
+msgstr "Insertar criterio aquí"
+
+msgid "Insertar nivel a la izquierda"
+msgstr "Insertar nivel a la izquierda"
+
+msgid "Insertar nivel aquí"
+msgstr "Insertar nivel aquí"
+
+msgid "Eliminar nivel"
+msgstr "Eliminar nivel"
+
+msgid "Eliminar criterio"
+msgstr "Eliminar criterio"
+
+msgid "Nuevo criterio"
+msgstr "Nuevo criterio"
+
+msgid "Nuevo nivel"
+msgstr "Nuevo nivel"
+
+msgid "Describe este nivel..."
+msgstr "Describe este nivel..."
+
+msgid "Ordenado de mayor a menor"
+msgstr "Ordenado de mayor a menor"
+
+msgid "Ordenado de menor a mayor"
+msgstr "Ordenado de menor a mayor"
+
+msgid "Descargados"
+msgstr "Descargados"
+
+msgid "Entrar"
+msgstr "Entrar"
+
+msgid "Continuar con Google"
+msgstr "Continuar con Google"
+
+msgid "Crear tarea"
+msgstr "Crear tarea"
+
+msgid "Título"
+msgstr "Título"
+
+msgid "Descripción"
+msgstr "Descripción"
+
+msgid "Fecha de entrega"
+msgstr "Fecha de entrega"
+
+msgid "Descargables"
+msgstr "Descargables"
+
+msgid "Usar para valoración de IA"
+msgstr "Usar para valoración de IA"
+
+msgid "Subir archivos"
+msgstr "Subir archivos"
+
+msgid "Subir y analizar"
+msgstr "Subir y analizar"
+
+msgid "Corregir"
+msgstr "Corregir"
+
+msgid "Eliminar"
+msgstr "Eliminar"
+
+msgid "Cambiar tema"
+msgstr "Cambiar tema"
+
+msgid "En línea"
+msgstr "En línea"
+
+msgid "Equipos"
+msgstr "Equipos"
+
+msgid "Acerca el cursor al borde de una fila o columna: aparecerá un "
+msgstr "Acerca el cursor al borde de una fila o columna: aparecerá un "
+
+msgid " para insertar justo ahí, como en una tabla de Word."
+msgstr " para insertar justo ahí, como en una tabla de Word."
+
+msgid "Inicio"
+msgstr "Inicio"
+
+msgid "Próximas entregas"
+msgstr "Próximas entregas"
+
+msgid "No hay entregas próximas"
+msgstr "No hay entregas próximas"
+
+msgid "Resumen del equipo"
+msgstr "Resumen del equipo"
+
+msgid "Ajustes del equipo"
+msgstr "Ajustes del equipo"
+
+msgid "Invitaciones"
+msgstr "Invitaciones"
+
+msgid "Crea un enlace de invitación que cualquiera puede usar para unirse como alumno."
+msgstr "Crea un enlace de invitación que cualquiera puede usar para unirse como alumno."
+
+msgid "Enlaces de invitación activos"
+msgstr "Enlaces de invitación activos"
+
+msgid "Pausar invitaciones"
+msgstr "Pausar invitaciones"
+
+msgid "Reanudar invitaciones"
+msgstr "Reanudar invitaciones"
+
+msgid "Crear enlace de invitación"
+msgstr "Crear enlace de invitación"
+
+msgid "Invitador"
+msgstr "Invitador"
+
+msgid "Usos"
+msgstr "Usos"
+
+msgid "Expira"
+msgstr "Expira"
+
+msgid "Roles"
+msgstr "Roles"
+
+msgid "Las invitaciones están pausadas: nadie podrá unirse con este enlace hasta que lo reactives."
+msgstr "Las invitaciones están pausadas: nadie podrá unirse con este enlace hasta que lo reactives."
+
+msgid "Todavía no has creado ningún enlace de invitación."
+msgstr "Todavía no has creado ningún enlace de invitación."
+
+msgid "Comparte este enlace para que se unan alumnos u otros profesores."
+msgstr "Comparte este enlace para que se unan alumnos u otros profesores."
+
+msgid "Tareas"
+msgstr "Tareas"
+
+msgid "Aún no hay tareas"
+msgstr "Aún no hay tareas"
+
+msgid "Profesor"
+msgstr "Profesor"
+
+msgid "Alumno"
+msgstr "Alumno"
+
+msgid "Ajustes"
+msgstr "Ajustes"
+
+msgid "Menú"
+msgstr "Menú"
+
+msgid "Añade un equipo"
+msgstr "Añade un equipo"
+
+msgid "Crea tu propio espacio o únete a uno con un código de invitación."
+msgstr "Crea tu propio espacio o únete a uno con un código de invitación."
+
+msgid "Nombre del equipo"
+msgstr "Nombre del equipo"
+
+msgid "Descripción (opcional)"
+msgstr "Descripción (opcional)"
+
+msgid "Cerrar"
+msgstr "Cerrar"
+
+msgid "Buscar"
+msgstr "Buscar"
+
+msgid "Información de cuenta"
+msgstr "Información de cuenta"
+
+msgid "Contraseña y seguridad"
+msgstr "Contraseña y seguridad"
+
+msgid "Apariencia"
+msgstr "Apariencia"
+
+msgid "Ajustes de la aplicación"
+msgstr "Ajustes de la aplicación"
+
+msgid "Editar perfiles ✎"
+msgstr "Editar perfiles ✎"
+
+msgid "Nombre y apellidos"
+msgstr "Nombre y apellidos"
+
+msgid "Mostrar"
+msgstr "Mostrar"
+
+msgid "Ocultar"
+msgstr "Ocultar"
+
+msgid "Editar"
+msgstr "Editar"
+
+msgid "Cancelar"
+msgstr "Cancelar"
+
+msgid "Guardar"
+msgstr "Guardar"
+
+msgid "Disponible de nuevo cada 14 días."
+msgstr "Disponible de nuevo cada 14 días."
+
+msgid "Contraseña actual"
+msgstr "Contraseña actual"
+
+msgid "Nueva contraseña"
+msgstr "Nueva contraseña"
+
+msgid "Mínimo 12 caracteres."
+msgstr "Mínimo 12 caracteres."
+
+msgid "Cambiar contraseña"
+msgstr "Cambiar contraseña"
+
+msgid "Autenticación de varios factores"
+msgstr "Autenticación de varios factores"
+
+msgid "Habilitado"
+msgstr "Habilitado"
+
+msgid "Deshabilitado"
+msgstr "Deshabilitado"
+
+msgid "Activar"
+msgstr "Activar"
+
+msgid "Escanea el código QR con tu app de autenticación o introduce la clave manualmente."
+msgstr "Escanea el código QR con tu app de autenticación o introduce la clave manualmente."
+
+msgid "Clave:"
+msgstr "Clave:"
+
+msgid "Abrir en la app"
+msgstr "Abrir en la app"
+
+msgid "Códigos de recuperación (se muestran solo una vez)"
+msgstr "Códigos de recuperación (se muestran solo una vez)"
+
+msgid "Descargar códigos .txt"
+msgstr "Descargar códigos .txt"
+
+msgid "Cambiar imagen"
+msgstr "Cambiar imagen"
+
+msgid "Quitar imagen"
+msgstr "Quitar imagen"
+
+msgid "Elegir imagen"
+msgstr "Elegir imagen"
+
+msgid "Elige una imagen y ajusta el recorte. Se mostrará en círculo."
+msgstr "Elige una imagen y ajusta el recorte. Se mostrará en círculo."
+
+msgid "Tienes cambios sin guardar"
+msgstr "Tienes cambios sin guardar"
+
+msgid "Restablecer"
+msgstr "Restablecer"
+
+msgid "Tema"
+msgstr "Tema"
+
+msgid "Oscuro"
+msgstr "Oscuro"
+
+msgid "Claro"
+msgstr "Claro"
+
+msgid "Idioma"
+msgstr "Idioma"
+
+msgid "Editar imagen"
+msgstr "Editar imagen"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Girar"
+msgstr "Girar"
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "Arrastra para mover la imagen"
+msgstr "Arrastra para mover la imagen"
+
+msgid "Nombre de usuario actualizado"
+msgstr "Nombre de usuario actualizado"
+
+msgid "Contraseña actualizada"
+msgstr "Contraseña actualizada"
+
+msgid "Imagen de perfil actualizada"
+msgstr "Imagen de perfil actualizada"
+
+msgid "Imagen eliminada"
+msgstr "Imagen eliminada"
+
+msgid "No se pudo leer la imagen"
+msgstr "No se pudo leer la imagen"
+
+msgid "Algo salió mal. Inténtalo de nuevo."
+msgstr "Algo salió mal. Inténtalo de nuevo."
+
+msgid "Guarda los cambios o restablécelos antes de cerrar"
+msgstr "Guarda los cambios o restablécelos antes de cerrar"
+
+msgid "El nombre de usuario no es válido"
+msgstr "El nombre de usuario no es válido"
+
+msgid "Solo puedes cambiar tu nombre de usuario cada 14 días"
+msgstr "Solo puedes cambiar tu nombre de usuario cada 14 días"
+
+msgid "Ese nombre de usuario ya está ocupado"
+msgstr "Ese nombre de usuario ya está ocupado"
+
+msgid "Selecciona una imagen"
+msgstr "Selecciona una imagen"
+
+msgid "Foto no permitida"
+msgstr "Foto no permitida"
+
+msgid "El archivo supera el tamaño permitido"
+msgstr "El archivo supera el tamaño permitido"
+
+msgid "La contraseña actual no es correcta"
+msgstr "La contraseña actual no es correcta"
+
+msgid "La nueva contraseña debe tener al menos 12 caracteres"
+msgstr "La nueva contraseña debe tener al menos 12 caracteres"
+
+msgid "La verificación en dos pasos ya está activa"
+msgstr "La verificación en dos pasos ya está activa"
+
+msgid "Administrar equipo"
+msgstr "Administrar equipo"
+
+msgid "Imagen del equipo"
+msgstr "Imagen del equipo"
+
+msgid "Generar invitación"
+msgstr "Generar invitación"
+
+msgid "Equipo / Aula"
+msgstr "Equipo / Aula"
+
+msgid "No hay tareas todavía"
+msgstr "No hay tareas todavía"
+
+msgid "Las nuevas tareas aparecerán aquí."
+msgstr "Las nuevas tareas aparecerán aquí."
+
+msgid "Aún no perteneces a ningún equipo"
+msgstr "Aún no perteneces a ningún equipo"
+
+msgid "Cuando te inviten, aparecerá aquí."
+msgstr "Cuando te inviten, aparecerá aquí."
+
+msgid "Sin descripción todavía."
+msgstr "Sin descripción todavía."
+
+msgid "Espacio de colaboración para tu clase."
+msgstr "Espacio de colaboración para tu clase."

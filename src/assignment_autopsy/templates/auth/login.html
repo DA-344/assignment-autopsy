@@ -1,0 +1,16 @@
+{% extends 'base.html' %}{% block content %}<section class="card auth auth-discord">
+	<h1>¡Bienvenido de nuevo!</h1>
+	<p class="page-subtitle">Nos alegra verte otra vez, inicia sesión en tu cuenta.</p>
+	<form method="post">
+		<input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+		<input type="hidden" name="next" value="{{next}}">
+		<label>Correo electrónico<input name="email" type="email" autocomplete="email" required></label>
+		<label>Contraseña<input name="password" type="password" autocomplete="current-password" required><a class="link forgot-link" href="#" title="Próximamente" onclick="return false">¿Olvidaste tu contraseña?</a></label>
+		<button type="submit">Iniciar sesión</button>
+	</form>
+	{% if google_enabled %}
+	<div class="auth-divider"><span>o</span></div>
+	<a class="button secondary auth-oauth" href="/auth/google?next={{ next }}">Continuar con Google</a>
+	{% endif %}
+	<p class="auth-switch">¿Necesitas una cuenta? <a class="link" href="/register?next={{next}}">Regístrate</a></p>
+</section>{% endblock %}

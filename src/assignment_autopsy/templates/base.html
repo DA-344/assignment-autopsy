@@ -1,0 +1,219 @@
+<!doctype html>
+{% set me = request.state.user %}
+{% set current_group_id = none %}
+{% if group is defined and group and group.id is defined %}{% set current_group_id = group.id|string %}
+{% elif assignment is defined and assignment %}{% set current_group_id = assignment.group_id|string %}
+{% elif group_id is defined and group_id %}{% set current_group_id = group_id|string %}{% endif %}
+<html lang="{{ ui_language(request) }}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="csrf-token" content="{{ csrf_token(request) }}">
+	<title>{% block title %}Assignment Autopsy{% endblock %}</title>
+	<script>(function(){try{var t=localStorage.getItem("assignment-theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("dark-mode")}catch(e){}})();</script>
+	<link rel="stylesheet" href="/static/css/app.css?v={{ static_version }}">
+	<script>window.I18N = {{ ui_catalog(request)|tojson }}; window.I18N_LANG = {{ ui_language(request)|tojson }};</script>
+	<script src="/static/js/app.js?v={{ static_version }}" defer></script>
+</head>
+<body>
+{% if me %}
+{% set shell = request.state.shell %}
+{% set current_group = (shell.groups|selectattr('id','equalto',current_group_id)|first) if current_group_id else none %}
+<div class="app-shell">
+	<nav class="server-rail" aria-label="Equipos">
+		<a class="server-item brand {% if request.url.path == '/groups' %}is-active{% endif %}" href="/groups" data-tip="Inicio"><span class="server-icon">A</span></a>
+		<span class="rail-divider"></span>
+		{% for g in shell.groups %}
+		<a class="server-item {% if g.id == current_group_id %}is-active{% endif %}" href="/groups/{{ g.id }}" data-tip="{{ g.name }}"><span class="server-icon">{% if g.avatar_key %}<img src="/avatars/group/{{ g.id }}?v={{ g.avatar_key }}" alt="">{% else %}{{ g.name[:2]|upper }}{% endif %}</span></a>
+		{% endfor %}
+		<button type="button" class="server-item add" data-open-modal="team-modal" data-tip="Añadir equipo" aria-label="Añadir equipo"><span class="server-icon">＋</span></button>
+	</nav>
+
+	<aside class="channel-sidebar">
+		{% if current_group %}
+		<header class="channel-header"><strong>{{ current_group.name }}</strong><span class="role-chip">{% if current_group.role == 'teacher' %}Profesor{% else %}Alumno{% endif %}</span></header>
+		<div class="channel-scroll">
+			<a class="channel-item {% if request.url.path == '/groups/' ~ current_group.id %}is-current{% endif %}" href="/groups/{{ current_group.id }}"><span class="channel-icon">⌂</span><span class="channel-name">Resumen del equipo</span></a>
+			<div class="channel-category"><span>Tareas</span>{% if current_group.role == 'teacher' %}<a class="category-add" href="/groups/{{ current_group.id }}/assignments/create" title="Nueva tarea" aria-label="Nueva tarea">＋</a>{% endif %}</div>
+			{% for item in shell.assignments.get(current_group.id, []) %}
+			<a class="channel-item {% if assignment is defined and assignment and assignment.id|string == item.id %}is-current{% endif %}" href="/assignments/{{ item.id }}"><span class="channel-icon">#</span><span class="channel-name">{{ item.title }}</span></a>
+			{% else %}<p class="channel-empty">Aún no hay tareas</p>{% endfor %}
+		</div>
+		{% else %}
+		<header class="channel-header"><strong>Inicio</strong></header>
+		<div class="channel-scroll">
+			<a class="channel-item is-current" href="/groups"><span class="channel-icon">▦</span><span class="channel-name">Mis equipos</span></a>
+			<div class="channel-category"><span>Próximas entregas</span></div>
+			{% for item in shell.upcoming %}
+			<a class="channel-item" href="/assignments/{{ item.id }}"><span class="channel-icon">#</span><span class="channel-name">{{ item.title }}<small>{{ item.group_name }} · {{ item.due_at.strftime('%d/%m %H:%M') }}</small></span></a>
+			{% else %}<p class="channel-empty">No hay entregas próximas</p>{% endfor %}
+		</div>
+		{% endif %}
+		<div class="user-panel">
+			<button type="button" class="user-panel-profile" data-open-settings="profile" aria-label="Perfil">
+				<span class="avatar sm" data-user-avatar-slot><span class="avatar-face" data-user-face data-initial="{{ me.username[:1]|upper }}">{% if me.avatar_key %}<img src="/avatars/user/{{ me.id }}?v={{ me.avatar_key }}" alt="">{% else %}{{ me.username[:1]|upper }}{% endif %}</span><i class="presence"></i></span>
+				<span class="user-panel-text"><strong data-user-name>{{ me.username }}</strong><small>En línea</small></span>
+			</button>
+			<button type="button" class="icon-button" data-open-settings="account" data-tip="Ajustes" aria-label="Ajustes">⚙</button>
+		</div>
+	</aside>
+
+	<main class="main-content">
+		<header class="topbar">
+			<button type="button" class="icon-button sidebar-toggle" data-sidebar-toggle aria-label="Menú">☰</button>
+			<div class="breadcrumb">{% for crumb in breadcrumbs|default([]) %}<a href="{{ crumb.url }}">{{ crumb.label }}</a><b>/</b>{% endfor %}<strong>{% block breadcrumb %}Espacio de trabajo{% endblock %}</strong></div>
+		</header>
+		<div class="content-wrap">
+{% else %}
+<div class="auth-shell"><div class="auth-stack">
+	<a class="auth-brand" href="/login"><span class="brand-symbol">A</span><span>Assignment Autopsy</span></a>
+	<div class="lang-switch" role="group" aria-label="Idioma">
+		<button type="button" class="lang-option" data-language-option="es">Español</button>
+		<button type="button" class="lang-option" data-language-option="en">English</button>
+	</div>
+{% endif %}
+			{% if error %}<p class="flash flash-error">{{ error }}</p>{% endif %}
+			{% if success %}<p class="flash flash-success">{{ success }}</p>{% endif %}
+			{% block content %}{% endblock %}
+{% if me %}
+		</div>
+	</main>
+</div>
+
+<div class="modal-backdrop" id="team-modal" hidden>
+	<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="team-modal-title">
+		<button type="button" class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+		<h2 id="team-modal-title">Añade un equipo</h2>
+		<p class="page-subtitle">Crea tu propio espacio o únete a uno con un código de invitación.</p>
+		<div class="segmented" role="tablist"><button type="button" class="is-active" data-tab="create">Crear equipo</button><button type="button" data-tab="join">Unirse</button></div>
+		<form method="post" action="/groups" data-tab-panel="create"><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><label>Nombre del equipo<input name="name" required maxlength="160"></label><label>Descripción (opcional)<input name="description"></label><button>Crear equipo</button></form>
+		<form method="post" action="/groups/join" data-tab-panel="join" hidden><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><label>Código de invitación<input name="code" required></label><button>Unirse</button></form>
+	</div>
+</div>
+
+<div class="modal-backdrop" id="settings-modal" hidden>
+	<div class="settings-dialog" role="dialog" aria-modal="true" aria-label="Ajustes">
+		<aside class="settings-nav">
+			<button type="button" class="settings-user" data-settings-page="profile">
+				<span class="avatar md" data-user-avatar-slot><span class="avatar-face" data-user-face data-initial="{{ me.username[:1]|upper }}">{% if me.avatar_key %}<img src="/avatars/user/{{ me.id }}?v={{ me.avatar_key }}" alt="">{% else %}{{ me.username[:1]|upper }}{% endif %}</span></span>
+				<span><strong data-user-name>{{ me.username }}</strong><small>Editar perfiles ✎</small></span>
+			</button>
+			<input type="search" class="settings-search" placeholder="Buscar" data-settings-search aria-label="Buscar">
+			<nav class="settings-links">
+				<button type="button" class="settings-link is-active" data-settings-page="account"><span class="settings-icon">◉</span>Cuenta</button>
+				<div class="settings-sub"><a href="#" data-settings-scroll="account-info">Información de cuenta</a><a href="#" data-settings-scroll="account-security">Contraseña y seguridad</a></div>
+				<button type="button" class="settings-link" data-settings-page="profile"><span class="settings-icon">▣</span>Perfil</button>
+				<span class="settings-label">Ajustes de la aplicación</span>
+				<button type="button" class="settings-link" data-settings-page="appearance"><span class="settings-icon">◐</span>Apariencia</button>
+				<hr>
+				<form method="post" action="/logout"><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><button class="settings-link danger"><span class="settings-icon">⇥</span>Cerrar sesión</button></form>
+			</nav>
+		</aside>
+		<section class="settings-content">
+			<header class="settings-header"><h2 data-settings-title>Cuenta</h2><button type="button" class="modal-close" data-close-modal aria-label="Cerrar">×<small>ESC</small></button></header>
+			<div class="settings-scroll">
+				<div class="settings-page" data-page="account">
+					<section id="account-info">
+						<h3>Información de cuenta</h3>
+						<div class="setting-row">
+							<div class="setting-label">Nombre de usuario</div>
+							<div class="setting-value" data-value="username">{{ me.username }}</div>
+							<button type="button" class="button secondary" data-edit-toggle>Editar</button>
+							<form class="setting-edit" method="post" action="/profile/username" data-json-form="username" hidden>
+								<input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+								<label><input name="username" value="{{ me.username }}" maxlength="30" required aria-label="Nombre de usuario"></label>
+								<small class="muted">Disponible de nuevo cada 14 días.</small>
+								<p class="form-error" hidden></p>
+								<div class="setting-actions"><button type="button" class="button secondary" data-edit-cancel>Cancelar</button><button>Guardar</button></div>
+							</form>
+						</div>
+						<div class="setting-row">
+							<div class="setting-label">Nombre y apellidos</div>
+							<div class="setting-value">{{ me.first_name }} {{ me.last_name }}</div>
+						</div>
+						<div class="setting-row">
+							<div class="setting-label">Correo electrónico</div>
+							<div class="setting-value"><span data-email data-full="{{ me.email }}" data-masked="********@{{ me.email.split('@')[-1] }}">********@{{ me.email.split('@')[-1] }}</span> <a href="#" class="link" data-email-toggle>Mostrar</a></div>
+						</div>
+					</section>
+					<section id="account-security">
+						<h3>Contraseña y seguridad</h3>
+						<div class="setting-row">
+							<div class="setting-label">Contraseña</div>
+							<div class="setting-value"></div>
+							<button type="button" class="button secondary" data-edit-toggle>Editar</button>
+							<form class="setting-edit" method="post" action="/profile/password" data-json-form="password" hidden>
+								<input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+								{% if me.password_hash %}<label>Contraseña actual<input name="current_password" type="password" autocomplete="current-password" required></label>{% endif %}
+								<label>Nueva contraseña<input name="new_password" type="password" minlength="12" autocomplete="new-password" required></label>
+								<small class="muted">Mínimo 12 caracteres.</small>
+								<p class="form-error" hidden></p>
+								<div class="setting-actions"><button type="button" class="button secondary" data-edit-cancel>Cancelar</button><button>Cambiar contraseña</button></div>
+							</form>
+						</div>
+						<div class="setting-row">
+							<div class="setting-label">Autenticación de varios factores</div>
+							<div class="setting-value" data-totp-status>{% if me.totp_secret_encrypted %}Habilitado{% else %}Deshabilitado{% endif %}</div>
+							{% if not me.totp_secret_encrypted %}<button type="button" class="button secondary" data-totp-enable>Activar</button>{% endif %}
+							<div class="totp-panel" data-totp-panel hidden>
+								<p>Escanea el código QR con tu app de autenticación o introduce la clave manualmente.</p>
+								<div class="totp-qr" data-totp-qr hidden></div>
+								<p>Clave: <code data-totp-secret></code></p>
+								<a class="button secondary" data-totp-link href="#">Abrir en la app</a>
+								<h4>Códigos de recuperación (se muestran solo una vez)</h4>
+								<ul class="recovery-list" data-recovery-list></ul>
+								<button type="button" class="button secondary" data-download-recovery>Descargar códigos .txt</button>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="settings-page" data-page="profile" hidden>
+					<section>
+						<h3>Imagen de perfil</h3>
+						<p class="page-subtitle">Elige una imagen y ajusta el recorte. Se mostrará en círculo.</p>
+						<div class="profile-editor">
+							<div class="profile-controls">
+								<div class="avatar-picker" data-avatar-picker>
+									<button type="button" class="avatar-circle" data-avatar-trigger aria-label="Cambiar imagen"><span class="avatar-face" data-user-face data-initial="{{ me.username[:1]|upper }}">{% if me.avatar_key %}<img src="/avatars/user/{{ me.id }}?v={{ me.avatar_key }}" alt="">{% else %}{{ me.username[:1]|upper }}{% endif %}</span><span class="avatar-hover">Cambiar imagen</span></button>
+									<input type="file" accept=".jpg,.jpeg,.png,.webp,image/png,image/jpeg,image/webp" hidden data-avatar-file>
+								</div>
+								<div class="setting-actions left"><button type="button" class="button" data-avatar-change>Cambiar imagen</button><button type="button" class="button secondary" data-avatar-remove {% if not me.avatar_key %}hidden{% endif %}>Quitar imagen</button></div>
+							</div>
+							<div class="profile-preview">
+								<span class="preview-label">Vista previa</span>
+								<div class="preview-card"><div class="preview-banner"></div><span class="avatar xl" data-user-avatar-slot><span class="avatar-face" data-user-face data-preview-face data-initial="{{ me.username[:1]|upper }}">{% if me.avatar_key %}<img src="/avatars/user/{{ me.id }}?v={{ me.avatar_key }}" alt="">{% else %}{{ me.username[:1]|upper }}{% endif %}</span><i class="presence"></i></span><strong data-user-name>{{ me.username }}</strong><small>{{ me.first_name }} {{ me.last_name }}</small></div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="settings-page" data-page="appearance" hidden>
+					<section>
+						<h3>Tema</h3>
+						<div class="option-grid">
+							<button type="button" class="option-card" data-theme-option="dark"><span class="swatch swatch-dark"></span>Oscuro</button>
+							<button type="button" class="option-card" data-theme-option="light"><span class="swatch swatch-light"></span>Claro</button>
+						</div>
+					</section>
+					<section>
+						<h3>Idioma</h3>
+						<div class="option-grid">
+							<button type="button" class="option-card" data-language-option="es">Español</button>
+							<button type="button" class="option-card" data-language-option="en">English</button>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="unsaved-bar" data-unsaved-bar hidden>
+				<span>Tienes cambios sin guardar</span>
+				<div><button type="button" class="button secondary" data-avatar-reset>Restablecer</button><button type="button" class="button" data-avatar-save>Guardar cambios</button></div>
+			</div>
+		</section>
+	</div>
+</div>
+{% else %}
+</div></div>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="card profile-panel">
+  <h1>Perfil</h1>
+  <p>Gestiona tu acceso y la verificación en dos pasos.</p>
+
+  <div class="profile-grid">
+    <div>
+      <h2>Nombre de usuario</h2>
+      <form method="post" action="/profile/username">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+        <label>Nombre de usuario<input name="username" value="{{ user.username }}" maxlength="30" required></label>
+        <small>Disponible de nuevo cada 14 días.</small>
+        <button>Guardar nombre</button>
+      </form>
+    </div>
+    <div>
+      <h2>Imagen de perfil</h2>
+      <form method="post" action="/profile/avatar" enctype="multipart/form-data" class="avatar-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+        <input type="hidden" name="avatar_cropped" class="avatar-cropped">
+        <div class="avatar-editor"><div class="avatar-preview">{% if avatar_url %}<img src="{{ avatar_url }}" alt="Imagen de perfil">{% else %}<span class="avatar-placeholder">+</span>{% endif %}</div><label class="file-button">Elegir imagen<input name="avatar" type="file" accept=".jpg,.jpeg,.png,.webp" data-avatar-input hidden></label><label class="zoom-control">Zoom<input type="range" min="1" max="2" step=".05" value="1" data-avatar-zoom></label></div>
+        <button>Guardar imagen</button>
+      </form>
+    </div>
+    <div>
+      <h2>Seguridad</h2>
+      {% if user.totp_secret_encrypted %}
+        <p class="success">TOTP activo.</p>
+      {% else %}
+        <p>Activa TOTP para reforzar el acceso.</p>
+      {% endif %}
+
+      {% if not user.totp_secret_encrypted %}
+      <form method="post" action="/profile/totp/enable">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+        <button>Activar autenticación en dos pasos</button>
+      </form>
+      {% endif %}
+    </div>
+
+    {% if totp_secret %}
+    <div class="card inset">
+      <h3>Configuración de autenticación</h3>
+      <p>Escanea este código QR o usa la URI para configurar tu app.</p>
+      <img alt="Código QR TOTP" src="https://quickchart.io/qr?text={{ totp_uri | urlencode }}" width="220" height="220">
+      <p class="break-code"><code>{{ totp_uri }}</code></p>
+      <p>Secreto: <code>{{ totp_secret }}</code></p>
+      <h4>Códigos de recuperación (mostrar solo una vez)</h4>
+      <ul>
+        {% for code in recovery_codes %}
+        <li><code data-recovery-code>{{ code }}</code></li>
+        {% endfor %}
+      </ul>
+      <button type="button" class="button secondary" data-download-recovery>Descargar códigos .txt</button>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

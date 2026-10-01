@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block breadcrumb %}{{ assignment.title }}{% endblock %}
+{% block content %}
+<article class="card">
+  <h1>{{ assignment.title }}</h1>
+  {% if member_role and member_role.value == 'teacher' %}<div class="workspace-actions"><a class="button secondary" href="/assignments/{{ assignment.id }}/edit">Editar tarea</a><form method="post" action="/assignments/{{ assignment.id }}/delete" onsubmit="return confirm('¿Eliminar esta tarea y sus entregas?');"><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><button class="danger-button">Eliminar</button></form></div>{% endif %}
+  {% if assignment.description %}<p>{{ assignment.description }}</p>{% endif %}
+  {% if references %}
+  <h2>Archivos de referencia</h2>
+  <ul class="reference-list">
+    {% for reference in references %}
+    <li><a href="/files/{{ reference.id }}/preview" target="_blank">{{ reference.original_filename }}</a>{% if reference.view_once %}<span class="badge">Vista única</span>{% endif %}{% if reference.use_for_ai %}<span class="badge">Contexto IA</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if assignment.due_at %}<div class="meta-list"><span>Entrega: {{ assignment.due_at }}</span>{% if assignment.allow_resubmit %}<span class="badge">Se permite volver a entregar</span>{% endif %}</div>{% endif %}
+  {% if assignment.chat_enabled %}<p class="badge">Chat de tarea activado</p>{% endif %}
+  <h2>Requisitos</h2>
+  <ul>{% for requirement in assignment.requirements %}<li>{{ requirement.text }}</li>{% else %}<li>Sin requisitos específicos.</li>{% endfor %}</ul>
+  <h2>Rúbrica</h2>
+  {% if rubric %}
+  <p>Tipo: {{ rubric.type.value }}</p>
+  <div class="rubric-grid-wrap"><table class="rubric-grid rubric-readonly"><thead><tr><th>Criterio</th>{% if rubric.type.value == 'points' %}<th>Puntos</th>{% else %}{% for level in levels %}<th>{{ level.label }}</th>{% endfor %}{% endif %}</tr></thead><tbody>
+  {% for criterion in criteria %}<tr><th>{{ criterion.label }}</th>{% if rubric.type.value == 'points' %}<td>{{ criterion.max_points or '-' }}</td>{% else %}{% for level in levels %}<td>{{ cell_descriptions.get((criterion.id|string, level.id|string), 'Sin descripción') }}</td>{% endfor %}{% endif %}</tr>{% endfor %}
+  </tbody></table></div>
+  {% else %}<p class="empty-state">Esta tarea no utiliza rúbrica.</p>{% endif %}
+  {% if member_role and member_role.value == 'student' %}{% if submission and submission.state.value == 'submitted' %}<a class="button" href="/submissions/{{ submission.id }}">Ver entrega</a>{% elif submission %}<a class="button" href="/assignments/{{ assignment.id }}/submit">Editar entrega</a>{% else %}<a class="button" href="/assignments/{{ assignment.id }}/submit">Preparar entrega</a>{% endif %}{% endif %}
+  {% if member_role and member_role.value == 'teacher' %}
+  <section class="card teacher-submissions">
+    <div class="panel-title"><h2>Entregas para corregir</h2><span>{{ submissions|length }}</span></div>
+    {% if submissions %}
+    <table class="sortable-table" data-sortable-table>
+      <thead><tr>
+        <th data-sort-key="first_name" data-sort-type="text">Nombre <button type="button" class="sort-button" data-sort-button>⇅</button></th>
+        <th data-sort-key="last_name" data-sort-type="text">Apellidos <button type="button" class="sort-button" data-sort-button>⇅</button></th>
+        <th data-sort-key="username" data-sort-type="text">Usuario <button type="button" class="sort-button" data-sort-button>⇅</button></th>
+        <th data-sort-key="date" data-sort-type="number">Fecha de entrega <button type="button" class="sort-button" data-sort-button>⇅</button></th>
+        <th data-sort-key="grade" data-sort-type="number">Nota IA <button type="button" class="sort-button" data-sort-button>⇅</button></th>
+        <th></th>
+      </tr></thead>
+      <tbody>
+        {% for item in submissions %}
+        <tr data-first_name="{{ item.student.first_name|lower }}" data-last_name="{{ item.student.last_name|lower }}" data-username="{{ item.student.username|lower }}" data-date="{{ item.submission.created_at.timestamp() }}" data-grade="{{ (item.ai_grade[0] / item.ai_grade[1] * 100) if item.ai_grade else -1 }}">
+          <td>{{ item.student.first_name }}</td>
+          <td>{{ item.student.last_name }}</td>
+          <td>{{ item.student.username }}</td>
+          <td>{{ item.submission.created_at }}</td>
+          <td>{% if item.ai_grade %}{{ item.ai_grade[0] }} / {{ item.ai_grade[1] }}{% else %}—{% endif %}</td>
+          <td><a class="button secondary" href="/submissions/{{ item.submission.id }}">Corregir</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}<p class="muted">Todavía no hay entregas enviadas.</p>{% endif %}
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

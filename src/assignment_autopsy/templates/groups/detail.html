@@ -1,0 +1,77 @@
+{% extends 'base.html' %}{% block breadcrumb %}{{ group.name }}{% endblock %}{% block content %}
+<div class="workspace-hero"><div class="hero-with-icon"><span class="group-icon lg">{% if group.avatar_key %}<img src="/avatars/group/{{ group.id }}?v={{ group.avatar_key }}" alt="">{% else %}{{ group.name[:2]|upper }}{% endif %}</span><div><div class="page-kicker">Equipo / Aula</div><div class="group-title-row"><h1>{{ group.name }}</h1>{% if admin %}<button type="button" class="icon-button" data-open-modal="group-settings-modal" data-tip="Ajustes del equipo" aria-label="Ajustes del equipo">⚙</button>{% endif %}</div><p>{{ group.description or 'Espacio de colaboración para tu clase.' }}</p></div></div>{% if admin %}<div class="workspace-actions"><a class="button" href="/groups/{{ group.id }}/assignments/create">＋ Nueva tarea</a></div>{% endif %}</div>
+<div class="split-layout"><section><div class="section-heading"><h2>Tareas del equipo</h2><span class="muted">{{ assignments|length }} publicadas</span></div><div class="assignment-stack">{% for a in assignments %}<a class="card assignment-card" href="/assignments/{{ a.id }}"{% if admin %} data-context-menu='{{ [{"label": "Editar tarea", "href": "/assignments/" ~ a.id ~ "/edit"}, {"label": "Eliminar tarea", "action": "/assignments/" ~ a.id ~ "/delete", "confirm": "¿Eliminar esta tarea y sus entregas?", "danger": true}]|tojson }}'{% endif %}><div><span class="badge">{% if a.due_at %}ENTREGA PROGRAMADA{% else %}ACTIVA{% endif %}</span><h3>{{ a.title }}</h3><p>{{ a.description or 'Sin descripción.' }}</p></div><span class="assignment-arrow">→</span></a>{% else %}<div class="card empty-state"><strong>No hay tareas todavía</strong>Las nuevas tareas aparecerán aquí.</div>{% endfor %}</div></section><aside class="side-panel"><section class="card"><div class="section-heading"><h2>Miembros</h2><span class="muted">{{ members|length }}</span></div><ul class="member-list">{% for member, member_role in members %}<li class="member-row"><span class="member-info"><span class="avatar sm"><span class="avatar-face">{% if member.avatar_key %}<img src="/avatars/user/{{ member.id }}?v={{ member.avatar_key }}" alt="">{% else %}{{ (member.username or member.email)[:1]|upper }}{% endif %}</span></span><span>{{member.username or member.email}}{% if member.id == group.created_by %}<span class="badge">CREADOR</span>{% endif %}<small>{{ member_role.value }}</small></span></span></li>{% endfor %}</ul></section></aside></div>
+
+{% if admin %}
+<div class="modal-backdrop" id="group-settings-modal" hidden>
+	<div class="settings-dialog" role="dialog" aria-modal="true" aria-label="Ajustes del equipo">
+		<aside class="settings-nav">
+			<div class="settings-user" style="cursor:default">
+				<span class="avatar md"><span class="avatar-face" data-initial="{{ group.name[:1]|upper }}">{% if group.avatar_key %}<img src="/avatars/group/{{ group.id }}?v={{ group.avatar_key }}" alt="">{% else %}{{ group.name[:1]|upper }}{% endif %}</span></span>
+				<span><strong>{{ group.name }}</strong><small>Ajustes del equipo</small></span>
+			</div>
+			<nav class="settings-links">
+				<button type="button" class="settings-link is-active" data-group-settings-page="overview"><span class="settings-icon">◉</span>Resumen</button>
+				<button type="button" class="settings-link" data-group-settings-page="invites"><span class="settings-icon">⚿</span>Invitaciones</button>
+				<button type="button" class="settings-link" data-group-settings-page="members"><span class="settings-icon">▣</span>Miembros</button>
+			</nav>
+		</aside>
+		<section class="settings-content">
+			<header class="settings-header"><h2 data-group-settings-title>Resumen</h2><button type="button" class="modal-close" data-close-modal aria-label="Cerrar">×<small>ESC</small></button></header>
+			<div class="settings-scroll">
+				<div class="settings-page" data-group-page="overview">
+					<section>
+						<h3>Resumen del equipo</h3>
+						<form method="post" action="/groups/{{group.id}}/settings" enctype="multipart/form-data">
+							<input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
+							<div class="avatar-picker centered" data-avatar-picker><button type="button" class="avatar-circle" data-avatar-trigger aria-label="Imagen del equipo"><span class="avatar-face" data-initial="{{ group.name[:1]|upper }}">{% if group.avatar_key %}<img src="/avatars/group/{{ group.id }}?v={{ group.avatar_key }}" alt="">{% else %}{{ group.name[:1]|upper }}{% endif %}</span><span class="avatar-hover">Cambiar imagen</span></button><input type="file" accept=".jpg,.jpeg,.png,.webp,image/png,image/jpeg,image/webp" hidden data-avatar-file><input type="file" name="avatar" hidden data-avatar-output></div>
+							<label>Nombre<input name="name" value="{{group.name}}" required></label>
+							<label>Descripción<textarea name="description">{{group.description or ''}}</textarea></label>
+							<button>Guardar cambios</button>
+						</form>
+					</section>
+				</div>
+				<div class="settings-page" data-group-page="invites" hidden>
+					<section>
+						<h3>Invitaciones</h3>
+						<p class="page-subtitle">Crea un enlace de invitación que cualquiera puede usar para unirse como alumno.</p>
+						<div class="invite-toolbar">
+							<span class="invite-toolbar-label">Enlaces de invitación activos</span>
+							<div class="invite-toolbar-actions">
+								<form method="post" action="/groups/{{group.id}}/invite/pause"><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><button class="button {% if group.invites_paused %}secondary{% else %}warn{% endif %}">{% if group.invites_paused %}Reanudar invitaciones{% else %}Pausar invitaciones{% endif %}</button></form>
+								<form method="post" action="/groups/{{group.id}}/invite"><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><button>Crear enlace de invitación</button></form>
+							</div>
+						</div>
+						{% if group.invite_code %}
+						<div class="invite-table-wrap">
+							<table class="invite-table">
+								<thead><tr><th>Invitador</th><th>Código de invitación</th><th>Usos</th><th>Expira</th><th>Roles</th></tr></thead>
+								<tbody>
+									<tr {% if group.invites_paused %}class="is-paused"{% endif %}>
+										<td><span class="invite-inviter"><span class="avatar sm"><span class="avatar-face">{% if invite_creator and invite_creator.avatar_key %}<img src="/avatars/user/{{ invite_creator.id }}?v={{ invite_creator.avatar_key }}" alt="">{% else %}{{ ((invite_creator.username or invite_creator.email)[:1]|upper) if invite_creator else '?' }}{% endif %}</span></span>{{ (invite_creator.username or invite_creator.email) if invite_creator else '—' }}</span></td>
+										<td><code>{{ group.invite_code }}</code></td>
+										<td>{{ group.invite_uses }}</td>
+										<td>∞</td>
+										<td>Alumno</td>
+									</tr>
+								</tbody>
+							</table>
+							{% if group.invites_paused %}<p class="muted">Las invitaciones están pausadas: nadie podrá unirse con este enlace hasta que lo reactives.</p>{% endif %}
+						</div>
+						{% else %}
+						<p class="empty-state">Todavía no has creado ningún enlace de invitación.</p>
+						{% endif %}
+					</section>
+				</div>
+				<div class="settings-page" data-group-page="members" hidden>
+					<section>
+						<h3>Miembros</h3>
+						<ul class="member-list">{% for member, member_role in members %}<li class="member-row"><span class="member-info"><span class="avatar sm"><span class="avatar-face">{% if member.avatar_key %}<img src="/avatars/user/{{ member.id }}?v={{ member.avatar_key }}" alt="">{% else %}{{ (member.username or member.email)[:1]|upper }}{% endif %}</span></span><span>{{member.username or member.email}}{% if member.id == group.created_by %}<span class="badge">CREADOR</span>{% endif %}<small>{{ member_role.value }}</small></span></span>{% if member.id != group.created_by %}<form method="post" action="/groups/{{group.id}}/members/{{member.id}}/role" class="role-form"><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><select name="role" aria-label="Rol de {{member.username or member.email}}"><option value="student" {% if member_role.value == 'student' %}selected{% endif %}>Alumno</option><option value="teacher" {% if member_role.value == 'teacher' %}selected{% endif %}>Profesor</option></select><button>Guardar</button></form>{% endif %}</li>{% endfor %}</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+{% endif %}
+{% endblock %}
