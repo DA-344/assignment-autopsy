@@ -1,6 +1,6 @@
-<p align="center">
-  <h1>Assignment Autopsy</h1>
-</p>
+<h1 align="center">
+  Assignment Autopsy
+</h1>
 <p align="center">
   <strong>Understand your assignment before you submit it.</strong>
 </p>
