@@ -1,5 +1,6 @@
-# Assignment Autopsy
-
+<p align="center">
+  <h1>Assignment Autopsy</h1>
+</p>
 <p align="center">
   <strong>Understand your assignment before you submit it.</strong>
 </p>
@@ -260,7 +261,9 @@ src/assignment_autopsy/
 │
 ├── templates/
 │
-└── static/
+├── static/
+│
+└── storage/
 ```
 
 </details>
@@ -281,6 +284,7 @@ src/assignment_autopsy/
 | `security`  | Handles passwords, sessions and CSRF protection |
 | `templates` | Contains the web interface                      |
 | `static`    | CSS, JavaScript and other static files          |
+| `storage`   | Handles file uploading and saving               |
 
 </details>
 
@@ -315,18 +319,11 @@ Before running Assignment Autopsy locally, make sure you have:
 * PostgreSQL
 * Git
 
-<details>
-<summary><strong>1. Clone the repository</strong></summary>
-
-```bash
-git clone https://github.com/YOUR_USERNAME/assignment-autopsy.git
-cd assignment-autopsy
-```
-
-</details>
+Also, make sure you have created a virtual environment. Although this is not a requirement, it is
+recommeded to easily manage the project dependencies.
 
 <details>
-<summary><strong>2. Create a virtual environment</strong></summary>
+<summary><strong>Create a virtual environment</strong></summary>
 
 ### Windows
 
@@ -344,8 +341,22 @@ source .venv/bin/activate
 
 </details>
 
+This project is not recommended to be directly installed via ``pip``, as it will not run required database upgrades.
+
 <details>
-<summary><strong>3. Install dependencies</strong></summary>
+<summary>Installation guide</summary>
+<details>
+<summary><strong>1. Clone the repository</strong></summary>
+
+```bash
+git clone https://github.com/YOUR_USERNAME/assignment-autopsy.git
+cd assignment-autopsy
+```
+
+</details>
+
+<details>
+<summary><strong>2. Install dependencies</strong></summary>
 
 ```bash
 pip install -e .
@@ -360,7 +371,7 @@ pip install -e ".[dev]"
 </details>
 
 <details>
-<summary><strong>4. Configure environment variables</strong></summary>
+<summary><strong>3. Configure environment variables</strong></summary>
 
 Copy the example environment file:
 
@@ -381,7 +392,7 @@ Then configure the required values.
 </details>
 
 <details>
-<summary><strong>5. Run database migrations</strong></summary>
+<summary><strong>4. Run database migrations</strong></summary>
 
 ```bash
 alembic upgrade head
@@ -390,7 +401,7 @@ alembic upgrade head
 </details>
 
 <details>
-<summary><strong>6. Start the application</strong></summary>
+<summary><strong>5. Start the application</strong></summary>
 
 ```bash
 py -m assignment_autopsy
@@ -402,6 +413,7 @@ The development server will then be available at:
 http://localhost:8000
 ```
 
+</details>
 </details>
 
 ---
