@@ -690,6 +690,10 @@ Special thanks to the maintainers of the libraries that make the project possibl
 
 ---
 
+This project was built in order to participate in the [`CSC Back-to-School Hackathon`](https://csc-back-to-school.devpost.com/)
+
+---
+
 <p align="center">
   <strong>Assignment Autopsy</strong><br>
   Find the problem before the deadline does.
