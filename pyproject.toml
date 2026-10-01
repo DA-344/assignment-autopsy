@@ -76,3 +76,6 @@ force-wrap-aliases = true
 
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
+
+[tool.uv.sources]
+assignment_autopsy = { path = "./src/assignment_autopsy", editable = true }
