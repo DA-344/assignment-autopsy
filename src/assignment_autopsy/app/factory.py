@@ -123,4 +123,5 @@ def create_app() -> FastAPI:
         )
 
     app.add_exception_handler(HTTPException, redirect_auth_errors)  # pyright: ignore[reportArgumentType]
+    app.add_route("/favicon.ico", lambda request: RedirectResponse(url="/static/favicon.ico"))
     return app

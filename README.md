@@ -1,3 +1,4 @@
+![icon](./src/assignment_autopsy/static/logo.svg)
 <h1 align="center">
   Assignment Autopsy
 </h1>
