@@ -628,6 +628,10 @@ The remaining work mainly consists of testing, bug fixing, documentation and dep
 * [ ] Final bug fixing
 * [ ] Production deployment
 * [ ] Documentation improvements
+* [ ] Email verification
+* [ ] Account recovery
+* [ ] Institutional identity verification
+* [ ] Improved account lifecycle management
 
 </details>
 
