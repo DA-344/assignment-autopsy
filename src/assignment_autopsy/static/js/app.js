@@ -129,9 +129,38 @@ document.addEventListener("mouseover", (event) => {
 document.addEventListener("scroll", () => { tooltip.hidden = true; }, true);
 document.addEventListener("click", () => { tooltip.hidden = true; });
 
-/* ---- Mobile sidebar ---- */
-document.querySelector("[data-sidebar-toggle]")?.addEventListener("click", () => document.querySelector(".app-shell")?.classList.toggle("sidebar-open"));
-document.querySelector(".main-content")?.addEventListener("click", () => document.querySelector(".app-shell")?.classList.remove("sidebar-open"));
+/* ---- Mobile drawer (rail + channel list), Discord-style ---- */
+const appShell = document.querySelector(".app-shell");
+const isPhone = () => window.matchMedia("(max-width: 760px)").matches;
+const setDrawer = (open) => appShell?.classList.toggle("sidebar-open", open);
+document.querySelector("[data-sidebar-toggle]")?.addEventListener("click", () => setDrawer(!appShell.classList.contains("sidebar-open")));
+appShell?.addEventListener("click", (event) => {
+	// The dimmed backdrop is a pseudo-element of the shell itself.
+	if (event.target === appShell) setDrawer(false);
+	if (event.target.closest("[data-open-modal], [data-open-settings]")) setDrawer(false);
+});
+let swipeStart = null;
+document.addEventListener("touchstart", (event) => {
+	const touch = event.touches[0];
+	swipeStart = isPhone() && event.touches.length === 1 ? { x: touch.clientX, y: touch.clientY } : null;
+}, { passive: true });
+document.addEventListener("touchend", (event) => {
+	if (!swipeStart || !appShell) return;
+	const touch = event.changedTouches[0];
+	const dx = touch.clientX - swipeStart.x;
+	const dy = touch.clientY - swipeStart.y;
+	const open = appShell.classList.contains("sidebar-open");
+	if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.6) {
+		if (!open && dx > 0 && swipeStart.x < 40) setDrawer(true);
+		else if (open && dx < 0) setDrawer(false);
+	}
+	swipeStart = null;
+}, { passive: true });
+// Land on the team list first on the home screen, once per browser tab session.
+if (appShell && isPhone() && location.pathname === "/groups" && !sessionStorage.getItem("drawer-seen")) {
+	sessionStorage.setItem("drawer-seen", "1");
+	setDrawer(true);
+}
 
 /* ---- Right-click quick-edit menu for cards (assignments, teams...), like Discord ---- */
 const contextMenu = document.createElement("div");
@@ -148,13 +177,10 @@ function submitContextAction(action) {
 	document.body.append(form);
 	form.requestSubmit();
 }
-document.addEventListener("contextmenu", (event) => {
-	const card = event.target.closest("[data-context-menu]");
-	if (!card) { closeContextMenu(); return; }
+function openContextMenu(card, x, y) {
 	let items;
 	try { items = JSON.parse(card.dataset.contextMenu); } catch { items = null; }
-	if (!items?.length) { closeContextMenu(); return; }
-	event.preventDefault();
+	if (!items?.length) { closeContextMenu(); return false; }
 	contextMenu.replaceChildren(...items.map((item) => {
 		const button = document.createElement("button");
 		button.type = "button";
@@ -170,9 +196,38 @@ document.addEventListener("contextmenu", (event) => {
 	}));
 	contextMenu.hidden = false;
 	const bounds = contextMenu.getBoundingClientRect();
-	contextMenu.style.left = `${Math.min(event.clientX, window.innerWidth - bounds.width - 8)}px`;
-	contextMenu.style.top = `${Math.min(event.clientY, window.innerHeight - bounds.height - 8)}px`;
+	contextMenu.style.left = `${Math.max(8, Math.min(x, window.innerWidth - bounds.width - 8))}px`;
+	contextMenu.style.top = `${Math.max(8, Math.min(y, window.innerHeight - bounds.height - 8))}px`;
+	return true;
+}
+document.addEventListener("contextmenu", (event) => {
+	const card = event.target.closest("[data-context-menu]");
+	if (!card) { closeContextMenu(); return; }
+	if (openContextMenu(card, event.clientX, event.clientY)) event.preventDefault();
 });
+/* Touch screens: long-press opens the same menu (iOS never fires `contextmenu`). */
+let longPress = null;
+let suppressClickUntil = 0;
+document.addEventListener("touchstart", (event) => {
+	const card = event.target.closest("[data-context-menu]");
+	if (!card || event.touches.length !== 1) return;
+	const { clientX, clientY } = event.touches[0];
+	longPress = setTimeout(() => {
+		longPress = null;
+		if (openContextMenu(card, clientX, clientY)) {
+			suppressClickUntil = Date.now() + 700;
+			navigator.vibrate?.(15);
+		}
+	}, 500);
+}, { passive: true });
+const cancelLongPress = () => { if (longPress) { clearTimeout(longPress); longPress = null; } };
+document.addEventListener("touchmove", cancelLongPress, { passive: true });
+document.addEventListener("touchend", cancelLongPress, { passive: true });
+document.addEventListener("touchcancel", cancelLongPress, { passive: true });
+// Capture phase so the card link doesn't navigate and the menu isn't instantly closed.
+document.addEventListener("click", (event) => {
+	if (Date.now() < suppressClickUntil) { event.preventDefault(); event.stopPropagation(); }
+}, true);
 document.addEventListener("click", closeContextMenu);
 document.addEventListener("scroll", closeContextMenu, true);
 window.addEventListener("blur", closeContextMenu);
