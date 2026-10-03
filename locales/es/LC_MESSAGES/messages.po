@@ -647,3 +647,30 @@ msgstr "Creador"
 
 msgid "publicadas"
 msgstr "publicadas"
+
+msgid "Requisitos (opcional, uno por línea)"
+msgstr "Requisitos (opcional, uno por línea)"
+
+msgid "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
+msgstr "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
+
+msgid "Qué debe incluir la entrega..."
+msgstr "Qué debe incluir la entrega..."
+
+msgid "Puedes dejarla vacía si el material adjunto explica la tarea..."
+msgstr "Puedes dejarla vacía si el material adjunto explica la tarea..."
+
+msgid "Puedes adjuntar varios documentos para el alumnado. Podrás añadir o quitar más después, al editar la tarea."
+msgstr "Puedes adjuntar varios documentos para el alumnado. Podrás añadir o quitar más después, al editar la tarea."
+
+msgid "Evaluación"
+msgstr "Evaluación"
+
+msgid "Permitir volver a entregar tras la correción"
+msgstr "Permitir volver a entregar tras la correción"
+
+msgid "Actívala solo si necesitas criterios y niveles de evaluación."
+msgstr "Actívala solo si necesitas criterios y niveles de evaluación."
+
+msgid "Activar chat de esta tarea"
+msgstr "Activar chat de esta tarea"
