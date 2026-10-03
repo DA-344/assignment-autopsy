@@ -666,7 +666,7 @@ msgstr "You can attach multiple documents for the students. You can add o remove
 msgid "Evaluación"
 msgstr "Evaluation"
 
-msgid "Permitir volver a entregar tras la correción"
+msgid "Permitir volver a entregar tras la corrección"
 msgstr "Allow handing the assignment again after evaluation"
 
 msgid "Actívala solo si necesitas criterios y niveles de evaluación."
