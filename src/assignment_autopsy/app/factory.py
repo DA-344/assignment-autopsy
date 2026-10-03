@@ -32,6 +32,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+import http
 
 from ..api.router import router
 from ..config import settings
@@ -123,5 +124,5 @@ def create_app() -> FastAPI:
         )
 
     app.add_exception_handler(HTTPException, redirect_auth_errors)  # pyright: ignore[reportArgumentType]
-    app.add_route("/favicon.ico", lambda request: RedirectResponse(url="/static/favicon.ico"))
+    app.add_route("/favicon.ico", lambda request: RedirectResponse(url="/static/favicon.ico", status_code=http.HTTPStatus.PERMANENT_REDIRECT))
     return app
