@@ -638,3 +638,6 @@ msgstr "Sin descripción todavía."
 
 msgid "Espacio de colaboración para tu clase."
 msgstr "Espacio de colaboración para tu clase."
+
+msgid "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
+msgstr "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
