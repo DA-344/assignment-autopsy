@@ -674,3 +674,48 @@ msgstr "Actívala solo si necesitas criterios y niveles de evaluación."
 
 msgid "Activar chat de esta tarea"
 msgstr "Activar chat de esta tarea"
+
+msgid "Criterio"
+msgstr "Criterio"
+
+msgid "Tipo"
+msgstr "Tipo"
+
+msgid "Máximo total"
+msgstr "Máximo total"
+
+msgid "Añadir criterio"
+msgstr "Añadir criterio"
+
+msgid "Añadir nivel"
+msgstr "Añadir nivel"
+
+msgid "Niveles
+msgstr "Niveles"
+
+msgid "Puntos"
+msgstr "Puntos"
+
+msgid "Ej. Comprensión"
+msgstr "Ej. Comprensión"
+
+msgid "Ej. Presentación"
+msgstr "Ej. Presentación"
+
+msgid "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
+msgstr "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
+
+msgid "Añadir archivos"
+msgstr "Añadir archivos"
+
+msgid "Peso (máx.)"
+msgstr "Peso (máx.)"
+
+msgid "Insuficiente"
+msgstr "Insuficiente"
+
+msgid "Aceptable"
+msgstr "Aceptable"
+
+msgid "Excelente"
+msgstr "Excelente"

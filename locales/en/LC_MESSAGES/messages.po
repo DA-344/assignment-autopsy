@@ -674,3 +674,48 @@ msgstr "Use it when you need to specify evaluation criteria or levels."
 
 msgid "Activar chat de esta tarea"
 msgstr "Activate assignment chat channel"
+
+msgid "Criterio"
+msgstr "Criterions"
+
+msgid "Tipo"
+msgstr "Type"
+
+msgid "Máximo total"
+msgstr "Total max"
+
+msgid "Añadir criterio"
+msgstr "Add criterion"
+
+msgid "Añadir nivel"
+msgstr "Add level"
+
+msgid "Niveles
+msgstr "Levels"
+
+msgid "Puntos"
+msgstr "Points"
+
+msgid "Ej. Comprensión"
+msgstr "Eg. Comprehension"
+
+msgid "Ej. Presentación"
+msgstr "Eg. Presentation"
+
+msgid "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
+msgstr "Write directly in the rubric, like in a spreadsheet. You can leave empty cells."
+
+msgid "Añadir archivos"
+msgstr "Add files"
+
+msgid "Peso (máx.)"
+msgstr "Max points weight"
+
+msgid "Insuficiente"
+msgstr "Failed"
+
+msgid "Aceptable"
+msgstr "Good"
+
+msgid "Excelente"
+msgstr "Excellent"
