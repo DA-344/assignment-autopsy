@@ -6,7 +6,7 @@
   <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
   <label>Título<input name="title" value="{{ assignment.title }}" required></label>
   <label>Descripción (opcional)<textarea name="description">{{ assignment.description or '' }}</textarea></label>
-  <label>Requisitos (opcional, uno por línea)<textarea name="requirements">{% for item in assignment.requirements %}{{ item.text }}{% if not loop.last %}\n{% endif %}{% endfor %}</textarea></label>
+  <label>Requisitos (opcional, uno por línea)<textarea name="requirements">{% for item in assignment.requirements %}{{ item.text }}{% if not loop.last %}{{ '\n' }}{% endif %}{% endfor %}</textarea></label>
   <div class="two-col"><label>Fecha de entrega<input type="datetime-local" name="due_at" value="{{ assignment.due_at.strftime('%Y-%m-%dT%H:%M') if assignment.due_at else '' }}"></label><label class="switch-row"><input type="checkbox" name="allow_resubmit" value="true" {% if assignment.allow_resubmit %}checked{% endif %}><span class="toggle-switch"></span> Permitir volver a entregar</label></div>
   <label class="switch-row"><input type="checkbox" name="chat_enabled" value="true" {% if assignment.chat_enabled %}checked{% endif %}><span class="toggle-switch"></span> Activar chat de la tarea</label>
   <button>Guardar cambios</button>
@@ -17,8 +17,8 @@
     {% for reference in references %}
     <div class="file-manager-row">
       <span class="file-icon">▤</span>
-      <span><a href="/files/{{ reference.id }}/preview" target="_blank">{{ reference.original_filename }}</a><small>{{ (reference.size / 1024)|round(1) }} KB{% if reference.view_once %} · Vista única{% endif %}{% if reference.use_for_ai %} · Contexto IA{% endif %}</small></span>
-      <form method="post" action="/files/{{ reference.id }}/delete" onsubmit="return confirm('¿Quitar este archivo?');">
+      <span><a href="/files/{{ reference.id }}/preview" target="_blank">{{ reference.original_filename }}</a><small>{{ (reference.size / 1024)|round(1) }} KB{% if reference.view_once %} · <span>Vista única</span>{% endif %}{% if reference.use_for_ai %} · <span>Contexto IA</span>{% endif %}</small></span>
+      <form method="post" action="/files/{{ reference.id }}/delete" onsubmit='return confirm({{ _(request, "¿Quitar este archivo?")|tojson }});'>
         <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
         <button type="submit" class="file-trash-button" aria-label="Eliminar archivo" title="Eliminar archivo">🗑</button>
       </form>
@@ -27,7 +27,7 @@
   </div>
   <form method="post" action="/assignments/{{ assignment.id }}/references" enctype="multipart/form-data">
     <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
-    <label class="file-add-control">＋ Añadir archivos<input type="file" name="reference_files" multiple accept=".txt,.md,.csv,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.odt,.odp,.ods"></label>
+    <label class="file-add-control"><span aria-hidden="true">＋</span> Añadir archivos<input type="file" name="reference_files" multiple accept=".txt,.md,.csv,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.odt,.odp,.ods"></label>
     <div class="two-col"><label class="switch-row"><input type="checkbox" name="reference_downloadable" value="true" checked><span class="toggle-switch"></span> Descargables</label><label class="switch-row"><input type="checkbox" name="reference_view_once" value="true"><span class="toggle-switch"></span> Vista única</label></div>
     <label class="switch-row"><input type="checkbox" name="reference_use_for_ai" value="true"><span class="toggle-switch"></span> Usar para valoración de IA</label>
     <button type="submit" class="button secondary">Subir archivos</button>

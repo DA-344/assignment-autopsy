@@ -3,7 +3,7 @@
 {% block content %}
 <article class="card">
   <h1>{{ assignment.title }}</h1>
-  {% if member_role and member_role.value == 'teacher' %}<div class="workspace-actions"><a class="button secondary" href="/assignments/{{ assignment.id }}/edit">Editar tarea</a><form method="post" action="/assignments/{{ assignment.id }}/delete" onsubmit="return confirm('¿Eliminar esta tarea y sus entregas?');"><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><button class="danger-button">Eliminar</button></form></div>{% endif %}
+  {% if member_role and member_role.value == 'teacher' %}<div class="workspace-actions"><a class="button secondary" href="/assignments/{{ assignment.id }}/edit">Editar tarea</a><form method="post" action="/assignments/{{ assignment.id }}/delete" onsubmit='return confirm({{ _(request, "¿Eliminar esta tarea y sus entregas?")|tojson }});'><input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"><button class="danger-button">Eliminar</button></form></div>{% endif %}
   {% if assignment.description %}<p>{{ assignment.description }}</p>{% endif %}
   {% if references %}
   <h2>Archivos de referencia</h2>
@@ -19,7 +19,7 @@
   <ul>{% for requirement in assignment.requirements %}<li>{{ requirement.text }}</li>{% else %}<li>Sin requisitos específicos.</li>{% endfor %}</ul>
   <h2>Rúbrica</h2>
   {% if rubric %}
-  <p><span aria-hidden="true">Tipo</span>: {{ rubric.type.value }}</p>
+  <p><span aria-hidden="true">Tipo</span>: {% if rubric.type.value == 'points' %}<span>Puntos</span>{% else %}<span>Niveles</span>{% endif %}</p>
   <div class="rubric-grid-wrap"><table class="rubric-grid rubric-readonly"><thead><tr><th>Criterio</th>{% if rubric.type.value == 'points' %}<th>Puntos</th>{% else %}{% for level in levels %}<th>{{ level.label }}</th>{% endfor %}{% endif %}</tr></thead><tbody>
   {% for criterion in criteria %}<tr><th>{{ criterion.label }}</th>{% if rubric.type.value == 'points' %}<td>{{ criterion.max_points or '-' }}</td>{% else %}{% for level in levels %}<td>{{ cell_descriptions.get((criterion.id|string, level.id|string), 'Sin descripción') }}</td>{% endfor %}{% endif %}</tr>{% endfor %}
   </tbody></table></div>

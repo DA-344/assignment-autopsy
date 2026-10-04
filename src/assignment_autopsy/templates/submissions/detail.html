@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block breadcrumb %}Entrega{% endblock %} {% block content %}
 <h1><span aria-hidden="true">Entrega</span> · {{ assignment.title }}</h1>
-<p><span aria-hidden="true">Estado</span>: <strong>{{ submission.state.value }}</strong></p>
+<p><span aria-hidden="true">Estado</span>: <strong>{% if submission.state.value == 'submitted' %}Enviada{% else %}Borrador{% endif %}</strong></p>
 
 <section class="card file-list">
   <h2>Archivos enviados</h2>
   {% for asset in assets %}
-    <a class="file-row" href="/files/{{ asset.id }}/preview" target="_blank"><span class="file-icon">▤</span><span><strong>{{ asset.original_filename }}</strong><small>{{ (asset.size / 1024)|round(1) }} KB · Abrir vista previa</small></span><span>↗</span></a>
+    <a class="file-row" href="/files/{{ asset.id }}/preview" target="_blank"><span class="file-icon">▤</span><span><strong>{{ asset.original_filename }}</strong><small>{{ (asset.size / 1024)|round(1) }} KB · <span>Abrir vista previa</span></small></span><span>↗</span></a>
   {%else %}
     <p>No hay archivos.</p>
   {% endfor %}
@@ -28,7 +28,7 @@
   {% if not evaluation or evaluation.state.value == 'pending' or evaluation.state.value == 'processing' %}
   <div class="evaluation-empty"><strong>Analizando tu entrega</strong><span>Puedes salir y volver más tarde. El resultado quedará guardado aquí.</span></div>
   {% elif evaluation.state.value == 'failed' %}
-  <p class="flash flash-error">No se pudo generar la estimación: {{ evaluation.error }}</p>
+  <p class="flash flash-error"><span>No se pudo generar la estimación</span>: {{ evaluation.error }}</p>
   {% else %}{% set result = evaluation.result or {} %}
   <section class="evaluation-summary">
       <h3>Resumen</h3>
@@ -47,8 +47,8 @@
       <div class="panel-title">
         <h3>Rúbrica</h3><span>{{ result.rubric|length }}</span></div>{% for item in result.rubric %}
       <article class="evaluation-item">
-        <div class="item-line"><strong>{{ criterion_labels.get(item.criterion_id, item.criterion_id) }}</strong><span class="confidence">{{ (item.confidence * 100)|round|int }}% confianza</span></div>{% if item.type == 'points' %}
-        <div class="score-line"><b>{{ item.estimated_points|round(1) }}</b><span>/ {{ item.max_points|round(1) }} puntos</span></div>{% else %}
+        <div class="item-line"><strong>{{ criterion_labels.get(item.criterion_id, item.criterion_id) }}</strong><span class="confidence">{{ (item.confidence * 100)|round|int }}% <span>confianza</span></span></div>{% if item.type == 'points' %}
+        <div class="score-line"><b>{{ item.estimated_points|round(1) }}</b><span>/ {{ item.max_points|round(1) }} <span>puntos</span></span></div>{% else %}
         <div class="level-line"><span>{{ item.estimated_min_level }}</span><b>→</b><span>{{ item.estimated_max_level }}</span></div>{% endif %}
         <p>{{ item.explanation }}</p>{% if item.evidence %}
         <ul class="evidence-list">{% for evidence in item.evidence %}
@@ -62,8 +62,8 @@
   <h2>Valoración del profesor</h2>
   <p>{{ evaluation.official_result.teacher_selection }}</p>{% if evaluation.official_result.rubric_choices %}
   <ul>{% for choice in evaluation.official_result.rubric_choices %}
-    <li><strong>{{ choice.criterion }}</strong>: {{ choice.level }}{% if choice.points is not none %} ({{ choice.points }} puntos){% endif %}</li>{% endfor %}</ul>{% endif %}{% if evaluation.official_result.total_max %}
-  <p class="score-line"><b>{{ evaluation.official_result.total_earned }}</b><span>/ {{ evaluation.official_result.total_max }} puntos finales</span></p>{% endif %}</section>{% endif %} {% if user.id == submission.student_id and submission.state.value == 'draft' %}
+    <li><strong>{{ choice.criterion }}</strong>: {{ choice.level }}{% if choice.points is not none %} ({{ choice.points }} <span>puntos</span>){% endif %}</li>{% endfor %}</ul>{% endif %}{% if evaluation.official_result.total_max %}
+  <p class="score-line"><b>{{ evaluation.official_result.total_earned }}</b><span>/ {{ evaluation.official_result.total_max }} <span>puntos finales</span></span></p>{% endif %}</section>{% endif %} {% if user.id == submission.student_id and submission.state.value == 'draft' %}
 <div class="workspace-actions"><a class="button secondary" href="/assignments/{{ assignment.id }}/submit">Editar entrega</a>
   <form method="post" action="/submissions/{{ submission.id }}/finalize">
     <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
@@ -74,10 +74,10 @@
   <h2>Valoración oficial del profesor</h2>
   <form method="post" action="/submissions/{{submission.id}}/official-evaluation" data-rubric-grading data-rubric-descending="{{ '1' if rubric and rubric.levels_descending else '0' }}" data-level-count="{{ levels|length }}">
     <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}"> {% if rubric and rubric.type.value == 'level' %}
-    <p class="builder-hint">{% if rubric.levels_descending %}Ordenado de mayor a menor: {{ levels[0].label if levels }} vale más.{% else %}Ordenado de menor a mayor: {{ levels[-1].label if levels }} vale más.{% endif %}</p>
+    <p class="builder-hint">{% if rubric.levels_descending %}<span>Ordenado de mayor a menor</span>: {{ levels[0].label if levels }} <span>vale más.</span>{% else %}<span>Ordenado de menor a mayor</span>: {{ levels[-1].label if levels }} <span>vale más.</span>{% endif %}</p>
     <div class="teacher-rubric">
       <div class="teacher-rubric-head"><strong>Criterio</strong>{% for level in levels %}<span>{{ level.label }}</span>{% endfor %}</div>{% for criterion in criteria %}
-      <div class="teacher-rubric-row" data-max-points="{{ criterion_points.get(criterion.id|string, criterion.max_points or 0)|round(2) }}"><strong>{{ criterion.label }}<small>{{ criterion_points.get(criterion.id|string, criterion.max_points or 0)|round(2) }} puntos</small></strong>
+      <div class="teacher-rubric-row" data-max-points="{{ criterion_points.get(criterion.id|string, criterion.max_points or 0)|round(2) }}"><strong>{{ criterion.label }}<small>{{ criterion_points.get(criterion.id|string, criterion.max_points or 0)|round(2) }} <span>puntos</span></small></strong>
           <select name="rubric_choice_{{ criterion.id }}" data-rubric-choice>
               <option value="">Sin seleccionar</option>
               {% for level in levels %}
@@ -87,13 +87,13 @@
       </div>{% endfor %}</div>
     {% elif rubric and rubric.type.value == 'points' %}
     <div class="teacher-rubric">{% for criterion in criteria %}
-      <label>{{ criterion.label }}{% if criterion.max_points %} (máx. {{ criterion.max_points }}){% endif %}
+      <label>{{ criterion.label }}{% if criterion.max_points %} (<span>máx.</span> {{ criterion.max_points }}){% endif %}
           <input name="rubric_points_{{ criterion.id }}" type="number" min="0" max="{{ criterion.max_points or rubric.max_points or 0 }}" step="0.01" data-rubric-points
           data-max-points="{{ criterion.max_points or rubric.max_points or 0 }}">
       </label>{% endfor %}</div>
     {% endif %}
     {% if rubric %}
-      <p class="grade-preview" data-rubric-preview>Nota estimada: <strong data-preview-earned>0</strong> / <span data-preview-max>0</span></p>
+      <p class="grade-preview" data-rubric-preview><span>Nota estimada</span>: <strong data-preview-earned>0</strong> / <span data-preview-max>0</span></p>
     {% else %}
       <label>Nota (sobre 10)<input type="number" name="manual_grade" min="0" max="10" step="0.01" value="{{ evaluation.official_result.total_earned if evaluation and evaluation.official_result else '' }}"></label>
     {% endif %}

@@ -9,29 +9,32 @@ msgstr "Mis equipos"
 msgid "Añadir equipo"
 msgstr "Añadir equipo"
 
-msgid "Preparar entrega"
-msgstr "Preparar entrega"
+msgid "Inicio"
+msgstr "Inicio"
 
-msgid "Editar entrega"
-msgstr "Editar entrega"
+msgid "Equipos"
+msgstr "Equipos"
 
-msgid "Ver entrega"
-msgstr "Ver entrega"
+msgid "Menú"
+msgstr "Menú"
 
-msgid "Valoración de IA"
-msgstr "Valoración de IA"
+msgid "Espacio de trabajo"
+msgstr "Espacio de trabajo"
 
-msgid "Rúbrica"
-msgstr "Rúbrica"
+msgid "En línea"
+msgstr "En línea"
 
-msgid "Entregas para corregir"
-msgstr "Entregas para corregir"
+msgid "Cambiar tema"
+msgstr "Cambiar tema"
 
-msgid "Guardar valoración oficial"
-msgstr "Guardar valoración oficial"
+msgid "Resumen del equipo"
+msgstr "Resumen del equipo"
 
-msgid "Permitir volver a entregar"
-msgstr "Permitir volver a entregar"
+msgid "Próximas entregas"
+msgstr "Próximas entregas"
+
+msgid "No hay entregas próximas"
+msgstr "No hay entregas próximas"
 
 msgid "AULA DIGITAL"
 msgstr "AULA DIGITAL"
@@ -44,36 +47,6 @@ msgstr "Espacios activos"
 
 msgid "Panel principal"
 msgstr "Panel principal"
-
-msgid "Diseño de actividad"
-msgstr "Diseño de actividad"
-
-msgid "Nueva tarea"
-msgstr "Nueva tarea"
-
-msgid "Editar tarea"
-msgstr "Editar tarea"
-
-msgid "Eliminar tarea"
-msgstr "Eliminar tarea"
-
-msgid "¿Eliminar esta tarea y sus entregas?"
-msgstr "¿Eliminar esta tarea y sus entregas?"
-
-msgid "Editar equipo"
-msgstr "Editar equipo"
-
-msgid "Eliminar equipo"
-msgstr "Eliminar equipo"
-
-msgid "¿Eliminar este equipo? Se perderán sus tareas y entregas."
-msgstr "¿Eliminar este equipo? Se perderán sus tareas y entregas."
-
-msgid "Permitir volver a entregar esta tarea"
-msgstr "Permitir volver a entregar esta tarea"
-
-msgid "Nota (sobre 10)"
-msgstr "Nota (sobre 10)"
 
 msgid "Administración"
 msgstr "Administración"
@@ -93,278 +66,83 @@ msgstr "Código de invitación"
 msgid "Nuevo equipo"
 msgstr "Nuevo equipo"
 
-msgid "Espacio de trabajo"
-msgstr "Espacio de trabajo"
+msgid "Editar equipo"
+msgstr "Editar equipo"
 
-msgid "Cuenta"
-msgstr "Cuenta"
+msgid "Eliminar equipo"
+msgstr "Eliminar equipo"
 
-msgid "Cerrar sesión"
-msgstr "Cerrar sesión"
+msgid "¿Eliminar este equipo? Se perderán sus tareas y entregas."
+msgstr "¿Eliminar este equipo? Se perderán sus tareas y entregas."
 
-msgid "Perfil"
-msgstr "Perfil"
+msgid "Añade un equipo"
+msgstr "Añade un equipo"
 
-msgid "Guardar cambios"
-msgstr "Guardar cambios"
+msgid "Crea tu propio espacio o únete a uno con un código de invitación."
+msgstr "Crea tu propio espacio o únete a uno con un código de invitación."
 
-msgid "Guardar imagen"
-msgstr "Guardar imagen"
+msgid "Nombre del equipo"
+msgstr "Nombre del equipo"
 
-msgid "Imagen de perfil"
-msgstr "Imagen de perfil"
+msgid "Descripción (opcional)"
+msgstr "Descripción (opcional)"
 
-msgid "Nombre de usuario"
-msgstr "Nombre de usuario"
+msgid "Ajustes del equipo"
+msgstr "Ajustes del equipo"
 
-msgid "Guardar nombre"
-msgstr "Guardar nombre"
+msgid "Administrar equipo"
+msgstr "Administrar equipo"
 
-msgid "Contraseña"
-msgstr "Contraseña"
+msgid "Imagen del equipo"
+msgstr "Imagen del equipo"
 
-msgid "Correo electrónico"
-msgstr "Correo electrónico"
+msgid "Equipo / Aula"
+msgstr "Equipo / Aula"
 
-msgid "Nombre"
-msgstr "Nombre"
+msgid "Aún no perteneces a ningún equipo"
+msgstr "Aún no perteneces a ningún equipo"
 
-msgid "Apellidos"
-msgstr "Apellidos"
+msgid "Cuando te inviten, aparecerá aquí."
+msgstr "Cuando te inviten, aparecerá aquí."
+
+msgid "Sin descripción todavía."
+msgstr "Sin descripción todavía."
+
+msgid "Espacio de colaboración para tu clase."
+msgstr "Espacio de colaboración para tu clase."
+
+msgid "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
+msgstr "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
+
+msgid "Creador"
+msgstr "Creador"
+
+msgid "CREADOR"
+msgstr "CREADOR"
 
 msgid "Mis miembros"
 msgstr "Mis miembros"
 
-msgid "Tareas del equipo"
-msgstr "Tareas del equipo"
-
 msgid "Miembros"
 msgstr "Miembros"
 
-msgid "Crear cuenta"
-msgstr "Crear cuenta"
+msgid "Tareas del equipo"
+msgstr "Tareas del equipo"
 
-msgid "Iniciar sesión"
-msgstr "Iniciar sesión"
+msgid "publicadas"
+msgstr "publicadas"
 
-msgid "Registrarme"
-msgstr "Registrarme"
+msgid "Profesor"
+msgstr "Profesor"
 
-msgid "Ya tengo cuenta"
-msgstr "Ya tengo cuenta"
+msgid "Alumno"
+msgstr "Alumno"
 
-msgid "¡Bienvenido de nuevo!"
-msgstr "¡Bienvenido de nuevo!"
-
-msgid "Nos alegra verte otra vez, inicia sesión en tu cuenta."
-msgstr "Nos alegra verte otra vez, inicia sesión en tu cuenta."
-
-msgid "¿Olvidaste tu contraseña?"
-msgstr "¿Olvidaste tu contraseña?"
-
-msgid "Próximamente"
-msgstr "Próximamente"
-
-msgid "o"
-msgstr "o"
-
-msgid "¿Necesitas una cuenta?"
-msgstr "¿Necesitas una cuenta?"
-
-msgid "Regístrate"
-msgstr "Regístrate"
-
-msgid "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
-msgstr "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
-
-msgid "¿Ya tienes cuenta?"
-msgstr "¿Ya tienes cuenta?"
-
-msgid "Inicia sesión"
-msgstr "Inicia sesión"
-
-msgid "Elige tu GamerTag"
-msgstr "Elige tu GamerTag"
-
-msgid "Enviar al profesor"
-msgstr "Enviar al profesor"
-
-msgid "Guardar y analizar"
-msgstr "Guardar y analizar"
-
-msgid "Guardar y analizar entrega"
-msgstr "Guardar y analizar entrega"
-
-msgid "Archivos enviados"
-msgstr "Archivos enviados"
-
-msgid "Archivos guardados"
-msgstr "Archivos guardados"
-
-msgid "Archivos de referencia"
-msgstr "Archivos de referencia"
-
-msgid "Requisitos"
-msgstr "Requisitos"
-
-msgid "Rúbrica opcional"
-msgstr "Rúbrica opcional"
-
-msgid "Usar rúbrica"
-msgstr "Usar rúbrica"
-
-msgid "Añadir criterio"
-msgstr "Añadir criterio"
-
-msgid "Añadir nivel"
-msgstr "Añadir nivel"
-
-msgid "Revisión asistida"
-msgstr "Revisión asistida"
+msgid "Roles"
+msgstr "Roles"
 
 msgid "Resumen"
 msgstr "Resumen"
-
-msgid "Completada"
-msgstr "Completada"
-
-msgid "No disponible"
-msgstr "No disponible"
-
-msgid "En proceso"
-msgstr "En proceso"
-
-msgid "Cumplido"
-msgstr "Cumplido"
-
-msgid "Parcial"
-msgstr "Parcial"
-
-msgid "Falta"
-msgstr "Falta"
-
-msgid "Pendiente"
-msgstr "Pendiente"
-
-msgid "Vista previa"
-msgstr "Vista previa"
-
-msgid "Vista única"
-msgstr "Vista única"
-
-msgid "Contexto IA"
-msgstr "Contexto IA"
-
-msgid "Sin descripción."
-msgstr "Sin descripción."
-
-msgid "Sin requisitos específicos."
-msgstr "Sin requisitos específicos."
-
-msgid "Esta tarea no utiliza rúbrica."
-msgstr "Esta tarea no utiliza rúbrica."
-
-msgid "Insertar criterio arriba"
-msgstr "Insertar criterio arriba"
-
-msgid "Insertar criterio aquí"
-msgstr "Insertar criterio aquí"
-
-msgid "Insertar nivel a la izquierda"
-msgstr "Insertar nivel a la izquierda"
-
-msgid "Insertar nivel aquí"
-msgstr "Insertar nivel aquí"
-
-msgid "Eliminar nivel"
-msgstr "Eliminar nivel"
-
-msgid "Eliminar criterio"
-msgstr "Eliminar criterio"
-
-msgid "Nuevo criterio"
-msgstr "Nuevo criterio"
-
-msgid "Nuevo nivel"
-msgstr "Nuevo nivel"
-
-msgid "Describe este nivel..."
-msgstr "Describe este nivel..."
-
-msgid "Ordenado de mayor a menor"
-msgstr "Ordenado de mayor a menor"
-
-msgid "Ordenado de menor a mayor"
-msgstr "Ordenado de menor a mayor"
-
-msgid "Descargados"
-msgstr "Descargados"
-
-msgid "Entrar"
-msgstr "Entrar"
-
-msgid "Continuar con Google"
-msgstr "Continuar con Google"
-
-msgid "Crear tarea"
-msgstr "Crear tarea"
-
-msgid "Título"
-msgstr "Título"
-
-msgid "Descripción"
-msgstr "Descripción"
-
-msgid "Fecha de entrega"
-msgstr "Fecha de entrega"
-
-msgid "Descargables"
-msgstr "Descargables"
-
-msgid "Usar para valoración de IA"
-msgstr "Usar para valoración de IA"
-
-msgid "Subir archivos"
-msgstr "Subir archivos"
-
-msgid "Subir y analizar"
-msgstr "Subir y analizar"
-
-msgid "Corregir"
-msgstr "Corregir"
-
-msgid "Eliminar"
-msgstr "Eliminar"
-
-msgid "Cambiar tema"
-msgstr "Cambiar tema"
-
-msgid "En línea"
-msgstr "En línea"
-
-msgid "Equipos"
-msgstr "Equipos"
-
-msgid "Acerca el cursor al borde de una fila o columna: aparecerá un "
-msgstr "Acerca el cursor al borde de una fila o columna: aparecerá un "
-
-msgid " para insertar justo ahí, como en una tabla de Word."
-msgstr " para insertar justo ahí, como en una tabla de Word."
-
-msgid "Inicio"
-msgstr "Inicio"
-
-msgid "Próximas entregas"
-msgstr "Próximas entregas"
-
-msgid "No hay entregas próximas"
-msgstr "No hay entregas próximas"
-
-msgid "Resumen del equipo"
-msgstr "Resumen del equipo"
-
-msgid "Ajustes del equipo"
-msgstr "Ajustes del equipo"
 
 msgid "Invitaciones"
 msgstr "Invitaciones"
@@ -384,6 +162,9 @@ msgstr "Reanudar invitaciones"
 msgid "Crear enlace de invitación"
 msgstr "Crear enlace de invitación"
 
+msgid "Generar invitación"
+msgstr "Generar invitación"
+
 msgid "Invitador"
 msgstr "Invitador"
 
@@ -392,9 +173,6 @@ msgstr "Usos"
 
 msgid "Expira"
 msgstr "Expira"
-
-msgid "Roles"
-msgstr "Roles"
 
 msgid "Las invitaciones están pausadas: nadie podrá unirse con este enlace hasta que lo reactives."
 msgstr "Las invitaciones están pausadas: nadie podrá unirse con este enlace hasta que lo reactives."
@@ -405,41 +183,20 @@ msgstr "Todavía no has creado ningún enlace de invitación."
 msgid "Comparte este enlace para que se unan alumnos u otros profesores."
 msgstr "Comparte este enlace para que se unan alumnos u otros profesores."
 
-msgid "Tareas"
-msgstr "Tareas"
+msgid "Cuenta"
+msgstr "Cuenta"
 
-msgid "Aún no hay tareas"
-msgstr "Aún no hay tareas"
+msgid "Cerrar sesión"
+msgstr "Cerrar sesión"
 
-msgid "Profesor"
-msgstr "Profesor"
-
-msgid "Alumno"
-msgstr "Alumno"
+msgid "Perfil"
+msgstr "Perfil"
 
 msgid "Ajustes"
 msgstr "Ajustes"
 
-msgid "Menú"
-msgstr "Menú"
-
-msgid "Añade un equipo"
-msgstr "Añade un equipo"
-
-msgid "Crea tu propio espacio o únete a uno con un código de invitación."
-msgstr "Crea tu propio espacio o únete a uno con un código de invitación."
-
-msgid "Nombre del equipo"
-msgstr "Nombre del equipo"
-
-msgid "Descripción (opcional)"
-msgstr "Descripción (opcional)"
-
-msgid "Cerrar"
-msgstr "Cerrar"
-
-msgid "Buscar"
-msgstr "Buscar"
+msgid "Ajustes de la aplicación"
+msgstr "Ajustes de la aplicación"
 
 msgid "Información de cuenta"
 msgstr "Información de cuenta"
@@ -449,9 +206,6 @@ msgstr "Contraseña y seguridad"
 
 msgid "Apariencia"
 msgstr "Apariencia"
-
-msgid "Ajustes de la aplicación"
-msgstr "Ajustes de la aplicación"
 
 msgid "Editar perfiles ✎"
 msgstr "Editar perfiles ✎"
@@ -474,8 +228,32 @@ msgstr "Cancelar"
 msgid "Guardar"
 msgstr "Guardar"
 
+msgid "Cerrar"
+msgstr "Cerrar"
+
+msgid "Buscar"
+msgstr "Buscar"
+
+msgid "Guardar cambios"
+msgstr "Guardar cambios"
+
+msgid "Guardar imagen"
+msgstr "Guardar imagen"
+
+msgid "Guardar nombre"
+msgstr "Guardar nombre"
+
+msgid "Imagen de perfil"
+msgstr "Imagen de perfil"
+
+msgid "Nombre de usuario"
+msgstr "Nombre de usuario"
+
 msgid "Disponible de nuevo cada 14 días."
 msgstr "Disponible de nuevo cada 14 días."
+
+msgid "Contraseña"
+msgstr "Contraseña"
 
 msgid "Contraseña actual"
 msgstr "Contraseña actual"
@@ -488,6 +266,15 @@ msgstr "Mínimo 12 caracteres."
 
 msgid "Cambiar contraseña"
 msgstr "Cambiar contraseña"
+
+msgid "Correo electrónico"
+msgstr "Correo electrónico"
+
+msgid "Nombre"
+msgstr "Nombre"
+
+msgid "Apellidos"
+msgstr "Apellidos"
 
 msgid "Autenticación de varios factores"
 msgstr "Autenticación de varios factores"
@@ -561,6 +348,9 @@ msgstr "Zoom"
 msgid "Arrastra para mover la imagen"
 msgstr "Arrastra para mover la imagen"
 
+msgid "Vista previa"
+msgstr "Vista previa"
+
 msgid "Nombre de usuario actualizado"
 msgstr "Nombre de usuario actualizado"
 
@@ -609,17 +399,155 @@ msgstr "La nueva contraseña debe tener al menos 12 caracteres"
 msgid "La verificación en dos pasos ya está activa"
 msgstr "La verificación en dos pasos ya está activa"
 
-msgid "Administrar equipo"
-msgstr "Administrar equipo"
+msgid "Credenciales incorrectas"
+msgstr "Credenciales incorrectas"
 
-msgid "Imagen del equipo"
-msgstr "Imagen del equipo"
+msgid "Código inválido"
+msgstr "Código inválido"
 
-msgid "Generar invitación"
-msgstr "Generar invitación"
+msgid "Nombre y apellidos son obligatorios"
+msgstr "Nombre y apellidos son obligatorios"
 
-msgid "Equipo / Aula"
-msgstr "Equipo / Aula"
+msgid "El correo ya está registrado"
+msgstr "El correo ya está registrado"
+
+msgid "El nombre de usuario debe tener entre 1 y 30 caracteres alfanuméricos, guiones o guiones bajos"
+msgstr "El nombre de usuario debe tener entre 1 y 30 caracteres alfanuméricos, guiones o guiones bajos"
+
+msgid "Crear cuenta"
+msgstr "Crear cuenta"
+
+msgid "Iniciar sesión"
+msgstr "Iniciar sesión"
+
+msgid "Registrarme"
+msgstr "Registrarme"
+
+msgid "Ya tengo cuenta"
+msgstr "Ya tengo cuenta"
+
+msgid "¡Bienvenido de nuevo!"
+msgstr "¡Bienvenido de nuevo!"
+
+msgid "Nos alegra verte otra vez, inicia sesión en tu cuenta."
+msgstr "Nos alegra verte otra vez, inicia sesión en tu cuenta."
+
+msgid "¿Olvidaste tu contraseña?"
+msgstr "¿Olvidaste tu contraseña?"
+
+msgid "Próximamente"
+msgstr "Próximamente"
+
+msgid "o"
+msgstr "o"
+
+msgid "¿Necesitas una cuenta?"
+msgstr "¿Necesitas una cuenta?"
+
+msgid "Regístrate"
+msgstr "Regístrate"
+
+msgid "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
+msgstr "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
+
+msgid "¿Ya tienes cuenta?"
+msgstr "¿Ya tienes cuenta?"
+
+msgid "Inicia sesión"
+msgstr "Inicia sesión"
+
+msgid "Elige tu GamerTag"
+msgstr "Elige tu GamerTag"
+
+msgid "Entrar"
+msgstr "Entrar"
+
+msgid "Continuar con Google"
+msgstr "Continuar con Google"
+
+msgid "Verificación en dos pasos"
+msgstr "Verificación en dos pasos"
+
+msgid "Código TOTP o recuperación"
+msgstr "Código TOTP o recuperación"
+
+msgid "Verificar"
+msgstr "Verificar"
+
+msgid "Gestiona tu acceso y la verificación en dos pasos."
+msgstr "Gestiona tu acceso y la verificación en dos pasos."
+
+msgid "Seguridad"
+msgstr "Seguridad"
+
+msgid "TOTP activo."
+msgstr "TOTP activo."
+
+msgid "Activa TOTP para reforzar el acceso."
+msgstr "Activa TOTP para reforzar el acceso."
+
+msgid "Activar autenticación en dos pasos"
+msgstr "Activar autenticación en dos pasos"
+
+msgid "Configuración de autenticación"
+msgstr "Configuración de autenticación"
+
+msgid "Escanea este código QR o usa la URI para configurar tu app."
+msgstr "Escanea este código QR o usa la URI para configurar tu app."
+
+msgid "Secreto:"
+msgstr "Secreto:"
+
+msgid "Códigos de recuperación (mostrar solo una vez)"
+msgstr "Códigos de recuperación (mostrar solo una vez)"
+
+msgid "Tareas"
+msgstr "Tareas"
+
+msgid "Aún no hay tareas"
+msgstr "Aún no hay tareas"
+
+msgid "Nueva tarea"
+msgstr "Nueva tarea"
+
+msgid "Crear tarea"
+msgstr "Crear tarea"
+
+msgid "Editar tarea"
+msgstr "Editar tarea"
+
+msgid "Eliminar tarea"
+msgstr "Eliminar tarea"
+
+msgid "¿Eliminar esta tarea y sus entregas?"
+msgstr "¿Eliminar esta tarea y sus entregas?"
+
+msgid "Diseño de actividad"
+msgstr "Diseño de actividad"
+
+msgid "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
+msgstr "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
+
+msgid "Actualiza los datos de la actividad sin perder sus entregas."
+msgstr "Actualiza los datos de la actividad sin perder sus entregas."
+
+msgid "Sigue el ritmo del curso y encuentra cada entrega rápidamente."
+msgstr "Sigue el ritmo del curso y encuentra cada entrega rápidamente."
+
+msgid "TAREA"
+msgstr "TAREA"
+
+msgid "ACTIVA"
+msgstr "ACTIVA"
+
+msgid "ENTREGA PROGRAMADA"
+msgstr "ENTREGA PROGRAMADA"
+
+msgid "No hay tareas publicadas"
+msgstr "No hay tareas publicadas"
+
+msgid "Vuelve más tarde para consultar nuevas actividades."
+msgstr "Vuelve más tarde para consultar nuevas actividades."
 
 msgid "No hay tareas todavía"
 msgstr "No hay tareas todavía"
@@ -627,32 +555,29 @@ msgstr "No hay tareas todavía"
 msgid "Las nuevas tareas aparecerán aquí."
 msgstr "Las nuevas tareas aparecerán aquí."
 
-msgid "Aún no perteneces a ningún equipo"
-msgstr "Aún no perteneces a ningún equipo"
+msgid "Título"
+msgstr "Título"
 
-msgid "Cuando te inviten, aparecerá aquí."
-msgstr "Cuando te inviten, aparecerá aquí."
+msgid "Descripción"
+msgstr "Descripción"
 
-msgid "Sin descripción todavía."
-msgstr "Sin descripción todavía."
+msgid "Fecha de entrega"
+msgstr "Fecha de entrega"
 
-msgid "Espacio de colaboración para tu clase."
-msgstr "Espacio de colaboración para tu clase."
+msgid "Sin descripción."
+msgstr "Sin descripción."
 
-msgid "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
-msgstr "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
+msgid "Sin descripción"
+msgstr "Sin descripción"
 
-msgid "Creador"
-msgstr "Creador"
+msgid "Sin requisitos específicos."
+msgstr "Sin requisitos específicos."
 
-msgid "publicadas"
-msgstr "publicadas"
+msgid "Requisitos"
+msgstr "Requisitos"
 
 msgid "Requisitos (opcional, uno por línea)"
 msgstr "Requisitos (opcional, uno por línea)"
-
-msgid "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
-msgstr "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
 
 msgid "Qué debe incluir la entrega..."
 msgstr "Qué debe incluir la entrega..."
@@ -660,20 +585,257 @@ msgstr "Qué debe incluir la entrega..."
 msgid "Puedes dejarla vacía si el material adjunto explica la tarea..."
 msgstr "Puedes dejarla vacía si el material adjunto explica la tarea..."
 
+msgid "Material"
+msgstr "Material"
+
+msgid "Permitir volver a entregar"
+msgstr "Permitir volver a entregar"
+
+msgid "Permitir volver a entregar esta tarea"
+msgstr "Permitir volver a entregar esta tarea"
+
+msgid "Permitir volver a entregar tras la corrección"
+msgstr "Permitir volver a entregar tras la corrección"
+
+msgid "Se permite volver a entregar"
+msgstr "Se permite volver a entregar"
+
+msgid "Activar chat de esta tarea"
+msgstr "Activar chat de esta tarea"
+
+msgid "Activar chat de la tarea"
+msgstr "Activar chat de la tarea"
+
+msgid "Chat de tarea activado"
+msgstr "Chat de tarea activado"
+
+msgid "Entrega"
+msgstr "Entrega"
+
+msgid "Entregas para corregir"
+msgstr "Entregas para corregir"
+
+msgid "Todavía no hay entregas enviadas."
+msgstr "Todavía no hay entregas enviadas."
+
+msgid "Corregir"
+msgstr "Corregir"
+
+msgid "Eliminar"
+msgstr "Eliminar"
+
+msgid "Usuario"
+msgstr "Usuario"
+
+msgid "Nota IA"
+msgstr "Nota IA"
+
+msgid "Archivos"
+msgstr "Archivos"
+
+msgid "Archivos de referencia"
+msgstr "Archivos de referencia"
+
+msgid "Archivos enviados"
+msgstr "Archivos enviados"
+
+msgid "Archivos guardados"
+msgstr "Archivos guardados"
+
 msgid "Puedes adjuntar varios documentos para el alumnado. Podrás añadir o quitar más después, al editar la tarea."
 msgstr "Puedes adjuntar varios documentos para el alumnado. Podrás añadir o quitar más después, al editar la tarea."
+
+msgid "Añadir archivos"
+msgstr "Añadir archivos"
+
+msgid "Subir archivos"
+msgstr "Subir archivos"
+
+msgid "Subir y analizar"
+msgstr "Subir y analizar"
+
+msgid "Descargables"
+msgstr "Descargables"
+
+msgid "Descargados"
+msgstr "Descargados"
+
+msgid "Vista única"
+msgstr "Vista única"
+
+msgid "Contexto IA"
+msgstr "Contexto IA"
+
+msgid "Usar para valoración de IA"
+msgstr "Usar para valoración de IA"
+
+msgid "Eliminar archivo"
+msgstr "Eliminar archivo"
+
+msgid "¿Quitar este archivo?"
+msgstr "¿Quitar este archivo?"
+
+msgid "¿Quitar este archivo de tu entrega?"
+msgstr "¿Quitar este archivo de tu entrega?"
+
+msgid "Todavía no hay archivos de referencia."
+msgstr "Todavía no hay archivos de referencia."
+
+msgid "Todavía no has adjuntado archivos."
+msgstr "Todavía no has adjuntado archivos."
+
+msgid "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
+msgstr "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
+
+msgid "Pendiente de subida"
+msgstr "Pendiente de subida"
+
+msgid "No hay archivos seleccionados"
+msgstr "No hay archivos seleccionados"
+
+msgid "No hay archivos"
+msgstr "No hay archivos"
+
+msgid "No hay archivos."
+msgstr "No hay archivos."
+
+msgid "Abrir vista previa"
+msgstr "Abrir vista previa"
+
+msgid "Preparar entrega"
+msgstr "Preparar entrega"
+
+msgid "Editar entrega"
+msgstr "Editar entrega"
+
+msgid "Ver entrega"
+msgstr "Ver entrega"
+
+msgid "Enviar al profesor"
+msgstr "Enviar al profesor"
+
+msgid "Guardar y analizar"
+msgstr "Guardar y analizar"
+
+msgid "Guardar y analizar entrega"
+msgstr "Guardar y analizar entrega"
+
+msgid "Ver análisis de IA"
+msgstr "Ver análisis de IA"
+
+msgid "Estado"
+msgstr "Estado"
+
+msgid "Borrador"
+msgstr "Borrador"
+
+msgid "Enviada"
+msgstr "Enviada"
+
+msgid "Revisión asistida"
+msgstr "Revisión asistida"
+
+msgid "Valoración de IA"
+msgstr "Valoración de IA"
+
+msgid "La evaluación IA es orientativa."
+msgstr "La evaluación IA es orientativa."
+
+msgid "Completada"
+msgstr "Completada"
+
+msgid "No disponible"
+msgstr "No disponible"
+
+msgid "En proceso"
+msgstr "En proceso"
+
+msgid "Analizando tu entrega"
+msgstr "Analizando tu entrega"
+
+msgid "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
+msgstr "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
+
+msgid "No se pudo generar la estimación"
+msgstr "No se pudo generar la estimación"
+
+msgid "La IA no proporcionó un resumen."
+msgstr "La IA no proporcionó un resumen."
+
+msgid "La valoración oficial corresponde al profesor."
+msgstr "La valoración oficial corresponde al profesor."
+
+msgid "Cumplido"
+msgstr "Cumplido"
+
+msgid "Parcial"
+msgstr "Parcial"
+
+msgid "Falta"
+msgstr "Falta"
+
+msgid "Pendiente"
+msgstr "Pendiente"
+
+msgid "Sin requisitos evaluables."
+msgstr "Sin requisitos evaluables."
+
+msgid "No hay criterios de rúbrica."
+msgstr "No hay criterios de rúbrica."
+
+msgid "confianza"
+msgstr "confianza"
+
+msgid "puntos"
+msgstr "puntos"
+
+msgid "puntos finales"
+msgstr "puntos finales"
+
+msgid "Valoración del profesor"
+msgstr "Valoración del profesor"
+
+msgid "Valoración oficial del profesor"
+msgstr "Valoración oficial del profesor"
+
+msgid "Guardar valoración oficial"
+msgstr "Guardar valoración oficial"
+
+msgid "Comentario oficial del profesor"
+msgstr "Comentario oficial del profesor"
+
+msgid "Sin seleccionar"
+msgstr "Sin seleccionar"
+
+msgid "máx."
+msgstr "máx."
+
+msgid "vale más."
+msgstr "vale más."
+
+msgid "Nota estimada"
+msgstr "Nota estimada"
+
+msgid "Nota (sobre 10)"
+msgstr "Nota (sobre 10)"
+
+msgid "Rúbrica"
+msgstr "Rúbrica"
+
+msgid "Rúbrica opcional"
+msgstr "Rúbrica opcional"
+
+msgid "Usar rúbrica"
+msgstr "Usar rúbrica"
+
+msgid "Esta tarea no utiliza rúbrica."
+msgstr "Esta tarea no utiliza rúbrica."
 
 msgid "Evaluación"
 msgstr "Evaluación"
 
-msgid "Permitir volver a entregar tras la corrección"
-msgstr "Permitir volver a entregar tras la correción"
-
 msgid "Actívala solo si necesitas criterios y niveles de evaluación."
 msgstr "Actívala solo si necesitas criterios y niveles de evaluación."
-
-msgid "Activar chat de esta tarea"
-msgstr "Activar chat de esta tarea"
 
 msgid "Criterio"
 msgstr "Criterio"
@@ -681,8 +843,17 @@ msgstr "Criterio"
 msgid "Tipo"
 msgstr "Tipo"
 
+msgid "Niveles"
+msgstr "Niveles"
+
+msgid "Puntos"
+msgstr "Puntos"
+
 msgid "Máximo total"
 msgstr "Máximo total"
+
+msgid "Peso (máx.)"
+msgstr "Peso (máx.)"
 
 msgid "Añadir criterio"
 msgstr "Añadir criterio"
@@ -690,26 +861,20 @@ msgstr "Añadir criterio"
 msgid "Añadir nivel"
 msgstr "Añadir nivel"
 
-msgid "Niveles
-msgstr "Niveles"
+msgid "Nuevo criterio"
+msgstr "Nuevo criterio"
 
-msgid "Puntos"
-msgstr "Puntos"
+msgid "Nuevo nivel"
+msgstr "Nuevo nivel"
 
-msgid "Ej. Comprensión"
-msgstr "Ej. Comprensión"
+msgid "Nivel 1"
+msgstr "Nivel 1"
 
-msgid "Ej. Presentación"
-msgstr "Ej. Presentación"
+msgid "Nivel 2"
+msgstr "Nivel 2"
 
-msgid "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
-msgstr "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
-
-msgid "Añadir archivos"
-msgstr "Añadir archivos"
-
-msgid "Peso (máx.)"
-msgstr "Peso (máx.)"
+msgid "Nivel 3"
+msgstr "Nivel 3"
 
 msgid "Insuficiente"
 msgstr "Insuficiente"
@@ -720,56 +885,44 @@ msgstr "Aceptable"
 msgid "Excelente"
 msgstr "Excelente"
 
-msgid "Todavía no hay entregas enviadas."
-msgstr "Todavía no hay entregas enviadas."
+msgid "Ej. Comprensión"
+msgstr "Ej. Comprensión"
 
-msgid "Todavía no has adjuntado archivos."
-msgstr "Todavía no has adjuntado archivos."
+msgid "Ej. Presentación"
+msgstr "Ej. Presentación"
 
-msgid "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
-msgstr "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
+msgid "Describe este nivel..."
+msgstr "Describe este nivel..."
 
-msgid "Archivos"
-msgstr "Archivos"
+msgid "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
+msgstr "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
 
-msgid "Entrega"
-msgstr "Entrega"
+msgid "Ordenado de mayor a menor"
+msgstr "Ordenado de mayor a menor"
 
-msgid "Se permite volver a entregar"
-msgstr "Se permite volver a entregar"
+msgid "Ordenado de menor a mayor"
+msgstr "Ordenado de menor a mayor"
 
-msgid "Usuario"
-msgstr "Usuario"
+msgid "Insertar criterio arriba"
+msgstr "Insertar criterio arriba"
 
-msgid "Nota IA"
-msgstr "Nota IA"
+msgid "Insertar criterio aquí"
+msgstr "Insertar criterio aquí"
 
-msgid "Chat de tarea activado"
-msgstr "Chat de tarea activado"
+msgid "Insertar nivel a la izquierda"
+msgstr "Insertar nivel a la izquierda"
 
-msgid "Analizando tu entrega"
-msgstr "Analizando tu entrega"
+msgid "Insertar nivel aquí"
+msgstr "Insertar nivel aquí"
 
-msgid "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
-msgstr "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
+msgid "Eliminar nivel"
+msgstr "Eliminar nivel"
 
-msgid "Estado"
-msgstr "Estado"
+msgid "Eliminar criterio"
+msgstr "Eliminar criterio"
 
-msgid "No hay archivos"
-msgstr "No hay archivos"
+msgid "Acerca el cursor al borde de una fila o columna: aparecerá un "
+msgstr "Acerca el cursor al borde de una fila o columna: aparecerá un "
 
-msgid "Sin requisitos evaluables."
-msgstr "Sin requisitos evaluables."
-
-msgid "¿Quitar este archivo de tu entrega?"
-msgstr "¿Quitar este archivo de tu entrega?"
-
-msgid "Pendiente de subida"
-msgstr "Pendiente de subida"
-
-msgid "No hay archivos seleccionados"
-msgstr "No hay archivos seleccionados"
-
-msgid "Ver análisis de IA"
-msgstr "Ver análisis de IA"
+msgid " para insertar justo ahí, como en una tabla de Word."
+msgstr " para insertar justo ahí, como en una tabla de Word."

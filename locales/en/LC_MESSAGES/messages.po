@@ -9,29 +9,32 @@ msgstr "My teams"
 msgid "Añadir equipo"
 msgstr "Add team"
 
-msgid "Preparar entrega"
-msgstr "Prepare submission"
+msgid "Inicio"
+msgstr "Home"
 
-msgid "Editar entrega"
-msgstr "Edit submission"
+msgid "Equipos"
+msgstr "Teams"
 
-msgid "Ver entrega"
-msgstr "View submission"
+msgid "Menú"
+msgstr "Menu"
 
-msgid "Valoración de IA"
-msgstr "AI review"
+msgid "Espacio de trabajo"
+msgstr "Workspace"
 
-msgid "Rúbrica"
-msgstr "Rubric"
+msgid "En línea"
+msgstr "Online"
 
-msgid "Entregas para corregir"
-msgstr "Submissions to review"
+msgid "Cambiar tema"
+msgstr "Toggle theme"
 
-msgid "Guardar valoración oficial"
-msgstr "Save official review"
+msgid "Resumen del equipo"
+msgstr "Team overview"
 
-msgid "Permitir volver a entregar"
-msgstr "Allow resubmission"
+msgid "Próximas entregas"
+msgstr "Upcoming deadlines"
+
+msgid "No hay entregas próximas"
+msgstr "No upcoming deadlines"
 
 msgid "AULA DIGITAL"
 msgstr "DIGITAL CLASSROOM"
@@ -44,36 +47,6 @@ msgstr "Active spaces"
 
 msgid "Panel principal"
 msgstr "Dashboard"
-
-msgid "Diseño de actividad"
-msgstr "Activity design"
-
-msgid "Nueva tarea"
-msgstr "New assignment"
-
-msgid "Editar tarea"
-msgstr "Edit assignment"
-
-msgid "Eliminar tarea"
-msgstr "Delete assignment"
-
-msgid "¿Eliminar esta tarea y sus entregas?"
-msgstr "Delete this assignment and its submissions?"
-
-msgid "Editar equipo"
-msgstr "Edit team"
-
-msgid "Eliminar equipo"
-msgstr "Delete team"
-
-msgid "¿Eliminar este equipo? Se perderán sus tareas y entregas."
-msgstr "Delete this team? Its assignments and submissions will be lost."
-
-msgid "Permitir volver a entregar esta tarea"
-msgstr "Allow resubmitting this assignment"
-
-msgid "Nota (sobre 10)"
-msgstr "Grade (out of 10)"
 
 msgid "Administración"
 msgstr "Administration"
@@ -93,278 +66,83 @@ msgstr "Invitation code"
 msgid "Nuevo equipo"
 msgstr "New team"
 
-msgid "Espacio de trabajo"
-msgstr "Workspace"
+msgid "Editar equipo"
+msgstr "Edit team"
 
-msgid "Cuenta"
-msgstr "Account"
+msgid "Eliminar equipo"
+msgstr "Delete team"
 
-msgid "Cerrar sesión"
-msgstr "Sign out"
+msgid "¿Eliminar este equipo? Se perderán sus tareas y entregas."
+msgstr "Delete this team? Its assignments and submissions will be lost."
 
-msgid "Perfil"
-msgstr "Profile"
+msgid "Añade un equipo"
+msgstr "Add a team"
 
-msgid "Guardar cambios"
-msgstr "Save changes"
+msgid "Crea tu propio espacio o únete a uno con un código de invitación."
+msgstr "Create your own space or join one with an invitation code."
 
-msgid "Guardar imagen"
-msgstr "Save picture"
+msgid "Nombre del equipo"
+msgstr "Team name"
 
-msgid "Imagen de perfil"
-msgstr "Profile picture"
+msgid "Descripción (opcional)"
+msgstr "Description (optional)"
 
-msgid "Nombre de usuario"
-msgstr "Username"
+msgid "Ajustes del equipo"
+msgstr "Team settings"
 
-msgid "Guardar nombre"
-msgstr "Save username"
+msgid "Administrar equipo"
+msgstr "Manage team"
 
-msgid "Contraseña"
-msgstr "Password"
+msgid "Imagen del equipo"
+msgstr "Team image"
 
-msgid "Correo electrónico"
-msgstr "Email address"
+msgid "Equipo / Aula"
+msgstr "Team / Classroom"
 
-msgid "Nombre"
-msgstr "First name"
+msgid "Aún no perteneces a ningún equipo"
+msgstr "You don't belong to any team yet"
 
-msgid "Apellidos"
-msgstr "Last name"
+msgid "Cuando te inviten, aparecerá aquí."
+msgstr "When you are invited, it will appear here."
+
+msgid "Sin descripción todavía."
+msgstr "No description yet."
+
+msgid "Espacio de colaboración para tu clase."
+msgstr "Collaboration space for your class."
+
+msgid "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
+msgstr "Everything you need to teach, collaborate and hand in assignments in one place."
+
+msgid "Creador"
+msgstr "Creator"
+
+msgid "CREADOR"
+msgstr "CREATOR"
 
 msgid "Mis miembros"
+msgstr "Members"
+
+msgid "Miembros"
 msgstr "Members"
 
 msgid "Tareas del equipo"
 msgstr "Team assignments"
 
-msgid "Miembros"
-msgstr "Members"
+msgid "publicadas"
+msgstr "published"
 
-msgid "Crear cuenta"
-msgstr "Create account"
+msgid "Profesor"
+msgstr "Teacher"
 
-msgid "Iniciar sesión"
-msgstr "Sign in"
+msgid "Alumno"
+msgstr "Student"
 
-msgid "Registrarme"
-msgstr "Create account"
-
-msgid "Ya tengo cuenta"
-msgstr "I already have an account"
-
-msgid "¡Bienvenido de nuevo!"
-msgstr "Welcome back!"
-
-msgid "Nos alegra verte otra vez, inicia sesión en tu cuenta."
-msgstr "We're glad to see you again, sign in to your account."
-
-msgid "¿Olvidaste tu contraseña?"
-msgstr "Forgot your password?"
-
-msgid "Próximamente"
-msgstr "Coming soon"
-
-msgid "o"
-msgstr "or"
-
-msgid "¿Necesitas una cuenta?"
-msgstr "Need an account?"
-
-msgid "Regístrate"
-msgstr "Sign up"
-
-msgid "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
-msgstr "Your role depends on each team: creator as teacher, invited as student."
-
-msgid "¿Ya tienes cuenta?"
-msgstr "Already have an account?"
-
-msgid "Inicia sesión"
-msgstr "Sign in"
-
-msgid "Elige tu GamerTag"
-msgstr "Choose your GamerTag"
-
-msgid "Enviar al profesor"
-msgstr "Send to teacher"
-
-msgid "Guardar y analizar"
-msgstr "Save and analyze"
-
-msgid "Guardar y analizar entrega"
-msgstr "Save and analyze submission"
-
-msgid "Archivos enviados"
-msgstr "Submitted files"
-
-msgid "Archivos guardados"
-msgstr "Saved files"
-
-msgid "Archivos de referencia"
-msgstr "Reference files"
-
-msgid "Requisitos"
-msgstr "Requirements"
-
-msgid "Rúbrica opcional"
-msgstr "Optional rubric"
-
-msgid "Usar rúbrica"
-msgstr "Use rubric"
-
-msgid "Añadir criterio"
-msgstr "Add criterion"
-
-msgid "Añadir nivel"
-msgstr "Add level"
-
-msgid "Revisión asistida"
-msgstr "Assisted review"
+msgid "Roles"
+msgstr "Roles"
 
 msgid "Resumen"
 msgstr "Summary"
-
-msgid "Completada"
-msgstr "Complete"
-
-msgid "No disponible"
-msgstr "Unavailable"
-
-msgid "En proceso"
-msgstr "In progress"
-
-msgid "Cumplido"
-msgstr "Fulfilled"
-
-msgid "Parcial"
-msgstr "Partially fulfilled"
-
-msgid "Falta"
-msgstr "Missing"
-
-msgid "Pendiente"
-msgstr "Pending"
-
-msgid "Vista previa"
-msgstr "Preview"
-
-msgid "Vista única"
-msgstr "One-time view"
-
-msgid "Contexto IA"
-msgstr "AI context"
-
-msgid "Sin descripción."
-msgstr "No description."
-
-msgid "Sin requisitos específicos."
-msgstr "No specific requirements."
-
-msgid "Esta tarea no utiliza rúbrica."
-msgstr "This assignment has no rubric."
-
-msgid "Insertar criterio arriba"
-msgstr "Insert criterion above"
-
-msgid "Insertar criterio aquí"
-msgstr "Insert criterion here"
-
-msgid "Insertar nivel a la izquierda"
-msgstr "Insert level on the left"
-
-msgid "Insertar nivel aquí"
-msgstr "Insert level here"
-
-msgid "Eliminar nivel"
-msgstr "Remove level"
-
-msgid "Eliminar criterio"
-msgstr "Remove criterion"
-
-msgid "Nuevo criterio"
-msgstr "New criterion"
-
-msgid "Nuevo nivel"
-msgstr "New level"
-
-msgid "Describe este nivel..."
-msgstr "Describe this level..."
-
-msgid "Ordenado de mayor a menor"
-msgstr "Sorted from highest to lowest"
-
-msgid "Ordenado de menor a mayor"
-msgstr "Sorted from lowest to highest"
-
-msgid "Descargados"
-msgstr "Downloaded"
-
-msgid "Entrar"
-msgstr "Sign in"
-
-msgid "Continuar con Google"
-msgstr "Continue with Google"
-
-msgid "Crear tarea"
-msgstr "Create assignment"
-
-msgid "Título"
-msgstr "Title"
-
-msgid "Descripción"
-msgstr "Description"
-
-msgid "Fecha de entrega"
-msgstr "Due date"
-
-msgid "Descargables"
-msgstr "Downloadable"
-
-msgid "Usar para valoración de IA"
-msgstr "Use for AI review"
-
-msgid "Subir archivos"
-msgstr "Upload files"
-
-msgid "Subir y analizar"
-msgstr "Upload and analyze"
-
-msgid "Corregir"
-msgstr "Grade"
-
-msgid "Eliminar"
-msgstr "Delete"
-
-msgid "Cambiar tema"
-msgstr "Toggle theme"
-
-msgid "En línea"
-msgstr "Online"
-
-msgid "Equipos"
-msgstr "Teams"
-
-msgid "Acerca el cursor al borde de una fila o columna: aparecerá un "
-msgstr "Move the cursor to a row or column edge: a "
-
-msgid " para insertar justo ahí, como en una tabla de Word."
-msgstr " will appear to insert right there, like in a Word table."
-
-msgid "Inicio"
-msgstr "Home"
-
-msgid "Próximas entregas"
-msgstr "Upcoming deadlines"
-
-msgid "No hay entregas próximas"
-msgstr "No upcoming deadlines"
-
-msgid "Resumen del equipo"
-msgstr "Team overview"
-
-msgid "Ajustes del equipo"
-msgstr "Team settings"
 
 msgid "Invitaciones"
 msgstr "Invites"
@@ -384,6 +162,9 @@ msgstr "Resume invites"
 msgid "Crear enlace de invitación"
 msgstr "Create invite link"
 
+msgid "Generar invitación"
+msgstr "Generate invitation"
+
 msgid "Invitador"
 msgstr "Inviter"
 
@@ -392,9 +173,6 @@ msgstr "Uses"
 
 msgid "Expira"
 msgstr "Expires"
-
-msgid "Roles"
-msgstr "Roles"
 
 msgid "Las invitaciones están pausadas: nadie podrá unirse con este enlace hasta que lo reactives."
 msgstr "Invites are paused: nobody will be able to join with this link until you resume them."
@@ -405,41 +183,20 @@ msgstr "You haven't created an invite link yet."
 msgid "Comparte este enlace para que se unan alumnos u otros profesores."
 msgstr "Share this link so students or other teachers can join."
 
-msgid "Tareas"
-msgstr "Assignments"
+msgid "Cuenta"
+msgstr "Account"
 
-msgid "Aún no hay tareas"
-msgstr "No assignments yet"
+msgid "Cerrar sesión"
+msgstr "Sign out"
 
-msgid "Profesor"
-msgstr "Teacher"
-
-msgid "Alumno"
-msgstr "Student"
+msgid "Perfil"
+msgstr "Profile"
 
 msgid "Ajustes"
 msgstr "Settings"
 
-msgid "Menú"
-msgstr "Menu"
-
-msgid "Añade un equipo"
-msgstr "Add a team"
-
-msgid "Crea tu propio espacio o únete a uno con un código de invitación."
-msgstr "Create your own space or join one with an invitation code."
-
-msgid "Nombre del equipo"
-msgstr "Team name"
-
-msgid "Descripción (opcional)"
-msgstr "Description (optional)"
-
-msgid "Cerrar"
-msgstr "Close"
-
-msgid "Buscar"
-msgstr "Search"
+msgid "Ajustes de la aplicación"
+msgstr "App settings"
 
 msgid "Información de cuenta"
 msgstr "Account information"
@@ -449,9 +206,6 @@ msgstr "Password and security"
 
 msgid "Apariencia"
 msgstr "Appearance"
-
-msgid "Ajustes de la aplicación"
-msgstr "App settings"
 
 msgid "Editar perfiles ✎"
 msgstr "Edit profile ✎"
@@ -474,8 +228,32 @@ msgstr "Cancel"
 msgid "Guardar"
 msgstr "Save"
 
+msgid "Cerrar"
+msgstr "Close"
+
+msgid "Buscar"
+msgstr "Search"
+
+msgid "Guardar cambios"
+msgstr "Save changes"
+
+msgid "Guardar imagen"
+msgstr "Save picture"
+
+msgid "Guardar nombre"
+msgstr "Save username"
+
+msgid "Imagen de perfil"
+msgstr "Profile picture"
+
+msgid "Nombre de usuario"
+msgstr "Username"
+
 msgid "Disponible de nuevo cada 14 días."
 msgstr "Can be changed again every 14 days."
+
+msgid "Contraseña"
+msgstr "Password"
 
 msgid "Contraseña actual"
 msgstr "Current password"
@@ -488,6 +266,15 @@ msgstr "At least 12 characters."
 
 msgid "Cambiar contraseña"
 msgstr "Change password"
+
+msgid "Correo electrónico"
+msgstr "Email address"
+
+msgid "Nombre"
+msgstr "First name"
+
+msgid "Apellidos"
+msgstr "Last name"
 
 msgid "Autenticación de varios factores"
 msgstr "Multi-factor authentication"
@@ -561,6 +348,9 @@ msgstr "Zoom"
 msgid "Arrastra para mover la imagen"
 msgstr "Drag to reposition the image"
 
+msgid "Vista previa"
+msgstr "Preview"
+
 msgid "Nombre de usuario actualizado"
 msgstr "Username updated"
 
@@ -609,17 +399,155 @@ msgstr "The new password must be at least 12 characters"
 msgid "La verificación en dos pasos ya está activa"
 msgstr "Two-step verification is already enabled"
 
-msgid "Administrar equipo"
-msgstr "Manage team"
+msgid "Credenciales incorrectas"
+msgstr "Incorrect credentials"
 
-msgid "Imagen del equipo"
-msgstr "Team image"
+msgid "Código inválido"
+msgstr "Invalid code"
 
-msgid "Generar invitación"
-msgstr "Generate invitation"
+msgid "Nombre y apellidos son obligatorios"
+msgstr "First and last name are required"
 
-msgid "Equipo / Aula"
-msgstr "Team / Classroom"
+msgid "El correo ya está registrado"
+msgstr "This email is already registered"
+
+msgid "El nombre de usuario debe tener entre 1 y 30 caracteres alfanuméricos, guiones o guiones bajos"
+msgstr "The username must be 1 to 30 characters: letters, numbers, hyphens or underscores"
+
+msgid "Crear cuenta"
+msgstr "Create account"
+
+msgid "Iniciar sesión"
+msgstr "Sign in"
+
+msgid "Registrarme"
+msgstr "Create account"
+
+msgid "Ya tengo cuenta"
+msgstr "I already have an account"
+
+msgid "¡Bienvenido de nuevo!"
+msgstr "Welcome back!"
+
+msgid "Nos alegra verte otra vez, inicia sesión en tu cuenta."
+msgstr "We're glad to see you again, sign in to your account."
+
+msgid "¿Olvidaste tu contraseña?"
+msgstr "Forgot your password?"
+
+msgid "Próximamente"
+msgstr "Coming soon"
+
+msgid "o"
+msgstr "or"
+
+msgid "¿Necesitas una cuenta?"
+msgstr "Need an account?"
+
+msgid "Regístrate"
+msgstr "Sign up"
+
+msgid "Tu rol depende de cada equipo: creador como profesor, invitado como alumno."
+msgstr "Your role depends on each team: creator as teacher, invited as student."
+
+msgid "¿Ya tienes cuenta?"
+msgstr "Already have an account?"
+
+msgid "Inicia sesión"
+msgstr "Sign in"
+
+msgid "Elige tu GamerTag"
+msgstr "Choose your GamerTag"
+
+msgid "Entrar"
+msgstr "Sign in"
+
+msgid "Continuar con Google"
+msgstr "Continue with Google"
+
+msgid "Verificación en dos pasos"
+msgstr "Two-step verification"
+
+msgid "Código TOTP o recuperación"
+msgstr "TOTP or recovery code"
+
+msgid "Verificar"
+msgstr "Verify"
+
+msgid "Gestiona tu acceso y la verificación en dos pasos."
+msgstr "Manage your access and two-step verification."
+
+msgid "Seguridad"
+msgstr "Security"
+
+msgid "TOTP activo."
+msgstr "TOTP is active."
+
+msgid "Activa TOTP para reforzar el acceso."
+msgstr "Enable TOTP to strengthen access."
+
+msgid "Activar autenticación en dos pasos"
+msgstr "Enable two-step authentication"
+
+msgid "Configuración de autenticación"
+msgstr "Authentication setup"
+
+msgid "Escanea este código QR o usa la URI para configurar tu app."
+msgstr "Scan this QR code or use the URI to set up your app."
+
+msgid "Secreto:"
+msgstr "Secret:"
+
+msgid "Códigos de recuperación (mostrar solo una vez)"
+msgstr "Recovery codes (show only once)"
+
+msgid "Tareas"
+msgstr "Assignments"
+
+msgid "Aún no hay tareas"
+msgstr "No assignments yet"
+
+msgid "Nueva tarea"
+msgstr "New assignment"
+
+msgid "Crear tarea"
+msgstr "Create assignment"
+
+msgid "Editar tarea"
+msgstr "Edit assignment"
+
+msgid "Eliminar tarea"
+msgstr "Delete assignment"
+
+msgid "¿Eliminar esta tarea y sus entregas?"
+msgstr "Delete this assignment and its submissions?"
+
+msgid "Diseño de actividad"
+msgstr "Activity design"
+
+msgid "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
+msgstr "Define the task and, if you want, add a visual rubric for evaluation."
+
+msgid "Actualiza los datos de la actividad sin perder sus entregas."
+msgstr "Update the activity details without losing its submissions."
+
+msgid "Sigue el ritmo del curso y encuentra cada entrega rápidamente."
+msgstr "Keep up with the course and find every submission quickly."
+
+msgid "TAREA"
+msgstr "ASSIGNMENT"
+
+msgid "ACTIVA"
+msgstr "ACTIVE"
+
+msgid "ENTREGA PROGRAMADA"
+msgstr "DUE DATE SET"
+
+msgid "No hay tareas publicadas"
+msgstr "No assignments published"
+
+msgid "Vuelve más tarde para consultar nuevas actividades."
+msgstr "Check back later for new activities."
 
 msgid "No hay tareas todavía"
 msgstr "No assignments yet"
@@ -627,116 +555,74 @@ msgstr "No assignments yet"
 msgid "Las nuevas tareas aparecerán aquí."
 msgstr "New assignments will appear here."
 
-msgid "Aún no perteneces a ningún equipo"
-msgstr "You don't belong to any team yet"
+msgid "Título"
+msgstr "Title"
 
-msgid "Cuando te inviten, aparecerá aquí."
-msgstr "When you are invited, it will appear here."
+msgid "Descripción"
+msgstr "Description"
 
-msgid "Sin descripción todavía."
-msgstr "No description yet."
+msgid "Fecha de entrega"
+msgstr "Due date"
 
-msgid "Espacio de colaboración para tu clase."
-msgstr "Collaboration space for your class."
+msgid "Sin descripción."
+msgstr "No description."
 
-msgid "Todo lo que necesitas para enseñar, colaborar y entregar en un solo lugar."
-msgstr "Everything you need to teach, collaborate and hand in assignments in one place."
+msgid "Sin descripción"
+msgstr "No description"
 
-msgid "Creador"
-msgstr "Creator"
+msgid "Sin requisitos específicos."
+msgstr "No specific requirements."
 
-msgid "publicadas"
-msgstr "published"
+msgid "Requisitos"
+msgstr "Requirements"
 
 msgid "Requisitos (opcional, uno por línea)"
 msgstr "Requirements (optional, one per line)"
 
-msgid "Define la actividad y, si quieres, añade una rúbrica visual para evaluar."
-msgstr "Define the task and, if you want, add a visual rubric for evaluation."
-
 msgid "Qué debe incluir la entrega..."
-msgstr "What must the assignment have..."
+msgstr "What must the submission include..."
 
 msgid "Puedes dejarla vacía si el material adjunto explica la tarea..."
 msgstr "You can leave this empty if the reference files explain the assignment..."
 
-msgid "Puedes adjuntar varios documentos para el alumnado. Podrás añadir o quitar más después, al editar la tarea."
-msgstr "You can attach multiple documents for the students. You can add o remove more later when editing the assignment."
+msgid "Material"
+msgstr "Material"
 
-msgid "Evaluación"
-msgstr "Evaluation"
+msgid "Permitir volver a entregar"
+msgstr "Allow resubmission"
+
+msgid "Permitir volver a entregar esta tarea"
+msgstr "Allow resubmitting this assignment"
 
 msgid "Permitir volver a entregar tras la corrección"
-msgstr "Allow handing the assignment again after evaluation"
+msgstr "Allow resubmitting after grading"
 
-msgid "Actívala solo si necesitas criterios y niveles de evaluación."
-msgstr "Use it when you need to specify evaluation criteria or levels."
+msgid "Se permite volver a entregar"
+msgstr "Resubmission is allowed"
 
 msgid "Activar chat de esta tarea"
-msgstr "Activate assignment chat channel"
+msgstr "Enable chat for this assignment"
 
-msgid "Criterio"
-msgstr "Criterions"
+msgid "Activar chat de la tarea"
+msgstr "Enable assignment chat"
 
-msgid "Tipo"
-msgstr "Type"
-
-msgid "Máximo total"
-msgstr "Total max"
-
-msgid "Añadir criterio"
-msgstr "Add criterion"
-
-msgid "Añadir nivel"
-msgstr "Add level"
-
-msgid "Niveles
-msgstr "Levels"
-
-msgid "Puntos"
-msgstr "Points"
-
-msgid "Ej. Comprensión"
-msgstr "Eg. Comprehension"
-
-msgid "Ej. Presentación"
-msgstr "Eg. Presentation"
-
-msgid "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
-msgstr "Write directly in the rubric, like in a spreadsheet. You can leave empty cells."
-
-msgid "Añadir archivos"
-msgstr "Add files"
-
-msgid "Peso (máx.)"
-msgstr "Max points weight"
-
-msgid "Insuficiente"
-msgstr "Failed"
-
-msgid "Aceptable"
-msgstr "Good"
-
-msgid "Excelente"
-msgstr "Excellent"
-
-msgid "Todavía no hay entregas enviadas."
-msgstr "There are not any assignments to review... yet."
-
-msgid "Todavía no has adjuntado archivos."
-msgstr "There are not any attached files yet."
-
-msgid "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
-msgstr "Files are saved as a draft when analyzing. You can come back anytime without having to start again."
-
-msgid "Archivos"
-msgstr "Files"
+msgid "Chat de tarea activado"
+msgstr "Assignment chat enabled"
 
 msgid "Entrega"
 msgstr "Submission"
 
-msgid "Se permite volver a entregar"
-msgstr "Resubmission is allowed"
+msgid "Entregas para corregir"
+msgstr "Submissions to review"
+
+msgid "Todavía no hay entregas enviadas."
+msgstr "There are no submissions yet."
+
+msgid "Corregir"
+msgstr "Grade"
+
+msgid "Eliminar"
+msgstr "Delete"
 
 msgid "Usuario"
 msgstr "Username"
@@ -744,26 +630,62 @@ msgstr "Username"
 msgid "Nota IA"
 msgstr "AI grade"
 
-msgid "Chat de tarea activado"
-msgstr "Assignment chat channel active"
+msgid "Archivos"
+msgstr "Files"
 
-msgid "Analizando tu entrega"
-msgstr "Analyzing your submission"
+msgid "Archivos de referencia"
+msgstr "Reference files"
 
-msgid "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
-msgstr "You can leave and come back later. The result will be stored here."
+msgid "Archivos enviados"
+msgstr "Submitted files"
 
-msgid "Estado"
-msgstr "Status"
+msgid "Archivos guardados"
+msgstr "Saved files"
 
-msgid "No hay archivos"
-msgstr "There are no files yet"
+msgid "Puedes adjuntar varios documentos para el alumnado. Podrás añadir o quitar más después, al editar la tarea."
+msgstr "You can attach multiple documents for the students. You can add or remove more later when editing the assignment."
 
-msgid "Sin requisitos evaluables."
-msgstr "No evaluable requirements available."
+msgid "Añadir archivos"
+msgstr "Add files"
+
+msgid "Subir archivos"
+msgstr "Upload files"
+
+msgid "Subir y analizar"
+msgstr "Upload and analyze"
+
+msgid "Descargables"
+msgstr "Downloadable"
+
+msgid "Descargados"
+msgstr "Downloaded"
+
+msgid "Vista única"
+msgstr "One-time view"
+
+msgid "Contexto IA"
+msgstr "AI context"
+
+msgid "Usar para valoración de IA"
+msgstr "Use for AI review"
+
+msgid "Eliminar archivo"
+msgstr "Delete file"
+
+msgid "¿Quitar este archivo?"
+msgstr "Remove this file?"
 
 msgid "¿Quitar este archivo de tu entrega?"
 msgstr "Remove this file from your submission?"
+
+msgid "Todavía no hay archivos de referencia."
+msgstr "There are no reference files yet."
+
+msgid "Todavía no has adjuntado archivos."
+msgstr "You haven't attached any files yet."
+
+msgid "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
+msgstr "Files are saved as a draft when analyzing. You can come back anytime without having to start again."
 
 msgid "Pendiente de subida"
 msgstr "Pending upload"
@@ -771,5 +693,236 @@ msgstr "Pending upload"
 msgid "No hay archivos seleccionados"
 msgstr "No selected files"
 
+msgid "No hay archivos"
+msgstr "There are no files yet"
+
+msgid "No hay archivos."
+msgstr "There are no files."
+
+msgid "Abrir vista previa"
+msgstr "Open preview"
+
+msgid "Preparar entrega"
+msgstr "Prepare submission"
+
+msgid "Editar entrega"
+msgstr "Edit submission"
+
+msgid "Ver entrega"
+msgstr "View submission"
+
+msgid "Enviar al profesor"
+msgstr "Send to teacher"
+
+msgid "Guardar y analizar"
+msgstr "Save and analyze"
+
+msgid "Guardar y analizar entrega"
+msgstr "Save and analyze submission"
+
 msgid "Ver análisis de IA"
 msgstr "View AI analysis"
+
+msgid "Estado"
+msgstr "Status"
+
+msgid "Borrador"
+msgstr "Draft"
+
+msgid "Enviada"
+msgstr "Submitted"
+
+msgid "Revisión asistida"
+msgstr "Assisted review"
+
+msgid "Valoración de IA"
+msgstr "AI review"
+
+msgid "La evaluación IA es orientativa."
+msgstr "The AI evaluation is for guidance only."
+
+msgid "Completada"
+msgstr "Complete"
+
+msgid "No disponible"
+msgstr "Unavailable"
+
+msgid "En proceso"
+msgstr "In progress"
+
+msgid "Analizando tu entrega"
+msgstr "Analyzing your submission"
+
+msgid "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
+msgstr "You can leave and come back later. The result will be stored here."
+
+msgid "No se pudo generar la estimación"
+msgstr "The estimate could not be generated"
+
+msgid "La IA no proporcionó un resumen."
+msgstr "The AI did not provide a summary."
+
+msgid "La valoración oficial corresponde al profesor."
+msgstr "The official review is made by the teacher."
+
+msgid "Cumplido"
+msgstr "Fulfilled"
+
+msgid "Parcial"
+msgstr "Partially fulfilled"
+
+msgid "Falta"
+msgstr "Missing"
+
+msgid "Pendiente"
+msgstr "Pending"
+
+msgid "Sin requisitos evaluables."
+msgstr "No evaluable requirements available."
+
+msgid "No hay criterios de rúbrica."
+msgstr "There are no rubric criteria."
+
+msgid "confianza"
+msgstr "confidence"
+
+msgid "puntos"
+msgstr "points"
+
+msgid "puntos finales"
+msgstr "final points"
+
+msgid "Valoración del profesor"
+msgstr "Teacher's review"
+
+msgid "Valoración oficial del profesor"
+msgstr "Official teacher review"
+
+msgid "Guardar valoración oficial"
+msgstr "Save official review"
+
+msgid "Comentario oficial del profesor"
+msgstr "Official teacher comment"
+
+msgid "Sin seleccionar"
+msgstr "Not selected"
+
+msgid "máx."
+msgstr "max."
+
+msgid "vale más."
+msgstr "is worth more."
+
+msgid "Nota estimada"
+msgstr "Estimated grade"
+
+msgid "Nota (sobre 10)"
+msgstr "Grade (out of 10)"
+
+msgid "Rúbrica"
+msgstr "Rubric"
+
+msgid "Rúbrica opcional"
+msgstr "Optional rubric"
+
+msgid "Usar rúbrica"
+msgstr "Use rubric"
+
+msgid "Esta tarea no utiliza rúbrica."
+msgstr "This assignment has no rubric."
+
+msgid "Evaluación"
+msgstr "Evaluation"
+
+msgid "Actívala solo si necesitas criterios y niveles de evaluación."
+msgstr "Use it when you need to specify evaluation criteria or levels."
+
+msgid "Criterio"
+msgstr "Criterion"
+
+msgid "Tipo"
+msgstr "Type"
+
+msgid "Niveles"
+msgstr "Levels"
+
+msgid "Puntos"
+msgstr "Points"
+
+msgid "Máximo total"
+msgstr "Total max"
+
+msgid "Peso (máx.)"
+msgstr "Max points weight"
+
+msgid "Añadir criterio"
+msgstr "Add criterion"
+
+msgid "Añadir nivel"
+msgstr "Add level"
+
+msgid "Nuevo criterio"
+msgstr "New criterion"
+
+msgid "Nuevo nivel"
+msgstr "New level"
+
+msgid "Nivel 1"
+msgstr "Level 1"
+
+msgid "Nivel 2"
+msgstr "Level 2"
+
+msgid "Nivel 3"
+msgstr "Level 3"
+
+msgid "Insuficiente"
+msgstr "Insufficient"
+
+msgid "Aceptable"
+msgstr "Acceptable"
+
+msgid "Excelente"
+msgstr "Excellent"
+
+msgid "Ej. Comprensión"
+msgstr "E.g. Comprehension"
+
+msgid "Ej. Presentación"
+msgstr "E.g. Presentation"
+
+msgid "Describe este nivel..."
+msgstr "Describe this level..."
+
+msgid "Escribe directamente en la cuadrícula, como en una hoja de cálculo. Puedes dejar celdas vacías."
+msgstr "Write directly in the grid, like in a spreadsheet. You can leave cells empty."
+
+msgid "Ordenado de mayor a menor"
+msgstr "Sorted from highest to lowest"
+
+msgid "Ordenado de menor a mayor"
+msgstr "Sorted from lowest to highest"
+
+msgid "Insertar criterio arriba"
+msgstr "Insert criterion above"
+
+msgid "Insertar criterio aquí"
+msgstr "Insert criterion here"
+
+msgid "Insertar nivel a la izquierda"
+msgstr "Insert level on the left"
+
+msgid "Insertar nivel aquí"
+msgstr "Insert level here"
+
+msgid "Eliminar nivel"
+msgstr "Remove level"
+
+msgid "Eliminar criterio"
+msgstr "Remove criterion"
+
+msgid "Acerca el cursor al borde de una fila o columna: aparecerá un "
+msgstr "Move the cursor to a row or column edge: a "
+
+msgid " para insertar justo ahí, como en una tabla de Word."
+msgstr " will appear to insert right there, like in a Word table."
