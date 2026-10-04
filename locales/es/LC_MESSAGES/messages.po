@@ -728,3 +728,6 @@ msgstr "Todavía no has adjuntado archivos."
 
 msgid "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
 msgstr "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
+
+msgid "Archivos"
+msgstr "Archivos"
