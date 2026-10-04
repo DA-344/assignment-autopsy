@@ -719,3 +719,6 @@ msgstr "Good"
 
 msgid "Excelente"
 msgstr "Excellent"
+
+msgid "Todavía no hay entregas enviadas."
+msgstr "There are not any assignments to review... yet."

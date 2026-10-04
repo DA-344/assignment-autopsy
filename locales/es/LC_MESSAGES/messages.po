@@ -719,3 +719,6 @@ msgstr "Aceptable"
 
 msgid "Excelente"
 msgstr "Excelente"
+
+msgid "Todavía no hay entregas enviadas."
+msgstr "Todavía no hay entregas enviadas."
