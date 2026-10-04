@@ -36,8 +36,6 @@
 
 <script>
   (() => {
-    // BUG ORIGINAL: el listener estaba sobre el <div> de resultados (no sobre el <input type="file">),
-    // así que "change" nunca se disparaba y la lista solo aparecía tras enviar el formulario.
     const input = document.getElementById("file-input");
     const list = document.getElementById("selected-files");
     const form = document.getElementById("submit-form");
@@ -46,8 +44,6 @@
       none: list.dataset.noFiles,
       remove: list.dataset.remove,
     };
-    // Un <input type="file"> reemplaza su selección en cada apertura del selector;
-    // acumulamos en un DataTransfer para poder ir añadiendo archivos en varias tandas.
     const selected = new DataTransfer();
     const keyOf = (file) => `${file.name}:${file.size}:${file.lastModified}`;
 
@@ -104,7 +100,6 @@
       render();
     });
 
-    // El <input> está oculto, así que `required` bloquearía el envío sin mostrar nada: validamos aquí.
     form.addEventListener("submit", (event) => {
       if (selected.files.length === 0) {
         event.preventDefault();

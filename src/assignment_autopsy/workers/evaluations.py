@@ -25,6 +25,7 @@ DEALINGS IN THE SOFTWARE.
 from __future__ import annotations
 
 from uuid import UUID
+from typing import TYPE_CHECKING
 
 import httpx
 import msgspec
@@ -37,24 +38,28 @@ from ..database.models.rubric import Rubric, RubricCriterion, RubricLevel
 from ..database.models.file_asset import FileAsset
 from ..database.models.submission import Submission
 
+if TYPE_CHECKING:
+    from ..ai.provider import AIProvider
+
 
 async def queue_evaluation(
     session_factory: async_sessionmaker,
-    provider,
+    provider: AIProvider,
     evaluation_id: UUID,
     assignment: Assignment,
     submission_text: str,
 ) -> None:
     """Build a database-backed job payload after the HTTP response is returned."""
     async with session_factory() as session:
-        evaluation = await session.get(Evaluation, evaluation_id)
-        current_submission = (
+        evaluation: Evaluation | None = await session.get(Evaluation, evaluation_id)
+        current_submission: Submission | None = (
             await session.get(Submission, evaluation.submission_id)
             if evaluation
             else None
         )
         if current_submission and current_submission.content_hash:
-            cached = await session.scalar(
+            assert evaluation is not None
+            cached: Evaluation | None = await session.scalar(
                 select(Evaluation)
                 .join(Submission, Submission.id == Evaluation.submission_id)
                 .where(
@@ -69,10 +74,10 @@ async def queue_evaluation(
                 evaluation.state = EvaluationState.COMPLETED
                 await session.commit()
                 return
-        rubric = await session.scalar(
+        rubric: Rubric | None = await session.scalar(
             select(Rubric).where(Rubric.assignment_id == assignment.id)
         )
-        criteria = (
+        criteria: list[RubricCriterion] = (
             list(
                 await session.scalars(
                     select(RubricCriterion).where(
@@ -83,7 +88,7 @@ async def queue_evaluation(
             if rubric
             else []
         )
-        levels = (
+        levels: list[RubricLevel] = (
             list(
                 await session.scalars(
                     select(RubricLevel)
@@ -94,7 +99,7 @@ async def queue_evaluation(
             if rubric
             else []
         )
-        references = list(
+        references: list[FileAsset] = list(
             await session.scalars(
                 select(FileAsset).where(
                     FileAsset.assignment_id == assignment.id,
@@ -121,7 +126,7 @@ async def queue_evaluation(
 
 
 async def run_evaluation(
-    session_factory: async_sessionmaker, evaluation_id: UUID, provider, payload: dict
+    session_factory: async_sessionmaker, evaluation_id: UUID, provider: AIProvider, payload: dict
 ) -> None:
     """Execute one job and persist a validated provider result or its error."""
     async with session_factory() as session:
