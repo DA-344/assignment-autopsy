@@ -733,7 +733,7 @@ msgid "Archivos"
 msgstr "Files"
 
 msgid "Entrega"
-msgstr "Due date"
+msgstr "Submission"
 
 msgid "Se permite volver a entregar"
 msgstr "Resubmission is allowed"
@@ -746,3 +746,27 @@ msgstr "AI grade"
 
 msgid "Chat de tarea activado"
 msgstr "Assignment chat channel active"
+
+msgid "Analizando tu entrega"
+msgstr "Analyzing your submission"
+
+msgid "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
+msgstr "You can leave and come back later. The result will be stored here."
+
+msgid "Estado"
+msgstr "Status"
+
+msgid "No hay archivos"
+msgstr "There are no files yet"
+
+msgid "Sin requisitos evaluables."
+msgstr "No evaluable requirements available."
+
+msgid "¿Quitar este archivo de tu entrega?"
+msgstr "Remove this file from your submission?"
+
+msgid "Pendiente de subida"
+msgstr "Pending upload"
+
+msgid "No hay archivos seleccionados"
+msgstr "No selected files"

@@ -20,8 +20,48 @@
   <form method="post" enctype="multipart/form-data">
     <input type="hidden" name="csrf_token" value="{{ csrf_token(request) }}">
     <label class="file-add-control"><span aria-hidden="true">＋</span> Añadir archivos<input type="file" name="files" multiple accept=".txt,.md,.csv,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.odt,.odp,.ods" required></label>
+    <div
+      id="selected-files"
+      data-pending="{{ _('Pendiente de subida') }}"
+      data-no-files="{{ _('No hay archivos seleccionados') }}"
+      aria-live="polite"
+      aria-atomic="false"
+    ></div>
     <button>Subir y analizar</button>
   </form>
 </section>
 {% if submission %}<a class="button secondary" href="/submissions/{{ submission.id }}">Ver análisis de IA</a>{% endif %}
+
+<script>
+  const fileInput = document.getElementById('selected-files');
+  const selectedFilesContainer = document.getElementById('selected-files');
+  const translations = {
+    pending: selectedFilesContainer.dataset.pending,
+    noFiles: selectedFilesContainer.dataset.noFiles
+  };
+
+  fileInput.addEventListener('change', () => {
+    selectedFilesContainer.replaceChildren();
+
+    if (fileInput.files.length === 0) {
+      const message = document.createElement("p");
+      message.textContent = translations.noFiles;
+      selectedFilesContainer.appendChild(message);
+      return;
+    };
+
+    for (const file of fileInput.files) {
+      const item = document.createElement("div");
+      item.className = "selected-file";
+      const name = document.createElement("span");
+      name.textContent = file.name;
+      const details = document.createElement("small");
+      const size = (file.size / 1024).toFixed(1);
+      details.textContent = `${size} KB · ${translations.pending}`;
+      item.append(name, details);
+      selectedFilesContainer.appendChild(item);
+    };
+  });
+</script>
+
 {% endblock %}

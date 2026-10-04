@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block breadcrumb %}Entrega{% endblock %} {% block content %}
-<h1>Entrega · {{ assignment.title }}</h1>
-<p>Estado: <strong>{{ submission.state.value }}</strong></p>
+<h1><span aria-hidden="true">Entrega</span> · {{ assignment.title }}</h1>
+<p><span aria-hidden="true">Estado</span>: <strong>{{ submission.state.value }}</strong></p>
 
 <section class="card file-list">
   <h2>Archivos enviados</h2>

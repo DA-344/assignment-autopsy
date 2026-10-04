@@ -746,3 +746,27 @@ msgstr "Nota IA"
 
 msgid "Chat de tarea activado"
 msgstr "Chat de tarea activado"
+
+msgid "Analizando tu entrega"
+msgstr "Analizando tu entrega"
+
+msgid "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
+msgstr "Puedes salir y volver más tarde. El resultado quedará guardado aquí."
+
+msgid "Estado"
+msgstr "Estado"
+
+msgid "No hay archivos"
+msgstr "No hay archivos"
+
+msgid "Sin requisitos evaluables."
+msgstr "Sin requisitos evaluables."
+
+msgid "¿Quitar este archivo de tu entrega?"
+msgstr "¿Quitar este archivo de tu entrega?"
+
+msgid "Pendiente de subida"
+msgstr "Pendiente de subida"
+
+msgid "No hay archivos seleccionados"
+msgstr "No hay archivos seleccionados"
