@@ -737,3 +737,9 @@ msgstr "Entrega"
 
 msgid "Se permite volver a entregar"
 msgstr "Se permite volver a entregar"
+
+msgid "Usuario"
+msgstr "Usuario"
+
+msgid "Nota IA"
+msgstr "Nota IA"

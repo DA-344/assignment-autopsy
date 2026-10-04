@@ -737,3 +737,9 @@ msgstr "Due date"
 
 msgid "Se permite volver a entregar"
 msgstr "Resubmission is allowed"
+
+msgid "Usuario"
+msgstr "Username"
+
+msgid "Nota IA"
+msgstr "AI grade"
