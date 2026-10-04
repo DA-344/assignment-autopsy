@@ -743,3 +743,6 @@ msgstr "Usuario"
 
 msgid "Nota IA"
 msgstr "Nota IA"
+
+msgid "Chat de tarea activado"
+msgstr "Chat de tarea activado"

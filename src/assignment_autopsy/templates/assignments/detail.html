@@ -19,7 +19,7 @@
   <ul>{% for requirement in assignment.requirements %}<li>{{ requirement.text }}</li>{% else %}<li>Sin requisitos específicos.</li>{% endfor %}</ul>
   <h2>Rúbrica</h2>
   {% if rubric %}
-  <p>Tipo: {{ rubric.type.value }}</p>
+  <p><span aria-hidden="true">Tipo</span>: {{ rubric.type.value }}</p>
   <div class="rubric-grid-wrap"><table class="rubric-grid rubric-readonly"><thead><tr><th>Criterio</th>{% if rubric.type.value == 'points' %}<th>Puntos</th>{% else %}{% for level in levels %}<th>{{ level.label }}</th>{% endfor %}{% endif %}</tr></thead><tbody>
   {% for criterion in criteria %}<tr><th>{{ criterion.label }}</th>{% if rubric.type.value == 'points' %}<td>{{ criterion.max_points or '-' }}</td>{% else %}{% for level in levels %}<td>{{ cell_descriptions.get((criterion.id|string, level.id|string), 'Sin descripción') }}</td>{% endfor %}{% endif %}</tr>{% endfor %}
   </tbody></table></div>

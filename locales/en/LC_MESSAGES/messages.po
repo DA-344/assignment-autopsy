@@ -743,3 +743,6 @@ msgstr "Username"
 
 msgid "Nota IA"
 msgstr "AI grade"
+
+msgid "Chat de tarea activado"
+msgstr "Assignment chat channel active"
