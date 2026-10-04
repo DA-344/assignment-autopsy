@@ -770,3 +770,6 @@ msgstr "Pendiente de subida"
 
 msgid "No hay archivos seleccionados"
 msgstr "No hay archivos seleccionados"
+
+msgid "Ver análisis de IA"
+msgstr "Ver análisis de IA"

@@ -770,3 +770,6 @@ msgstr "Pending upload"
 
 msgid "No hay archivos seleccionados"
 msgstr "No selected files"
+
+msgid "Ver análisis de IA"
+msgstr "View AI analysis"
