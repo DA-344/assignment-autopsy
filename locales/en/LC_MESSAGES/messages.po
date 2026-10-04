@@ -722,3 +722,9 @@ msgstr "Excellent"
 
 msgid "Todavía no hay entregas enviadas."
 msgstr "There are not any assignments to review... yet."
+
+msgid "Todavía no has adjuntado archivos."
+msgstr "There are not any attached files yet."
+
+msgid "Los archivos quedan guardados como borrador al analizarlos. Puedes volver aquí sin empezar de nuevo."
+msgstr "Files are saved as a draft when analyzing. You can come back anytime without having to start again."
