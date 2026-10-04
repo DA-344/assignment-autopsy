@@ -13,7 +13,7 @@
     {% endfor %}
   </ul>
   {% endif %}
-  {% if assignment.due_at %}<div class="meta-list"><span>Entrega: {{ assignment.due_at }}</span>{% if assignment.allow_resubmit %}<span class="badge">Se permite volver a entregar</span>{% endif %}</div>{% endif %}
+  {% if assignment.due_at %}<div class="meta-list"><span><span aria-hidden="true">Entrega</span>: {{ assignment.due_at }}</span>{% if assignment.allow_resubmit %}<span class="badge">Se permite volver a entregar</span>{% endif %}</div>{% endif %}
   {% if assignment.chat_enabled %}<p class="badge">Chat de tarea activado</p>{% endif %}
   <h2>Requisitos</h2>
   <ul>{% for requirement in assignment.requirements %}<li>{{ requirement.text }}</li>{% else %}<li>Sin requisitos específicos.</li>{% endfor %}</ul>

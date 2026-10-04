@@ -731,3 +731,9 @@ msgstr "Files are saved as a draft when analyzing. You can come back anytime wit
 
 msgid "Archivos"
 msgstr "Files"
+
+msgid "Entrega"
+msgstr "Due date"
+
+msgid "Se permite volver a entregar"
+msgstr "Resubmission is allowed"

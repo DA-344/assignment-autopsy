@@ -731,3 +731,9 @@ msgstr "Los archivos quedan guardados como borrador al analizarlos. Puedes volve
 
 msgid "Archivos"
 msgstr "Archivos"
+
+msgid "Entrega"
+msgstr "Entrega"
+
+msgid "Se permite volver a entregar"
+msgstr "Se permite volver a entregar"
